@@ -5,190 +5,1763 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>Lokomotiva řady 371</title>
+
+    <meta name="description"
+          content="Elektrická lokomotiva řady 371 Bastard – historie, technické parametry, konstrukce, trakční motory, modernizace a mezinárodní provoz.">
+
+    <title>Lokomotiva 371 – Bastard | Atlas lokomotiv</title>
+
     <link rel="stylesheet" href="styly.css">
 </head>
+
 <body>
 
 <header>
     <h1>Lokomotiva řady 371</h1>
-    <p>Dvousystémová elektrická lokomotiva</p>
+    <p>Bastard | ES 499.2 | Dvousystémová rychlíková lokomotiva</p>
 </header>
 
 <nav>
     <a href="index.html">Úvod</a>
     <a href="lokomotiva-242.html">Lokomotiva 242</a>
-    <a href="lokomotiva-371.html">Lokomotiva 371</a>
+    <a href="lokomotiva-371.html" aria-current="page">Lokomotiva 371</a>
     <a href="porovnani.html">Porovnání</a>
     <a href="galerie.html">Fotogalerie</a>
+    <a href="evidence.html">Evidence lokomotiv</a>
+
+    <button id="theme-toggle" type="button">
+        🌙 Tmavý režim
+    </button>
 </nav>
 
 <main>
+
+    <!-- ZÁKLADNÍ CHARAKTERISTIKA -->
+
     <section class="card">
-        <h2>Lokomotiva řady 371</h2>
 
-        <img src="images/371.jpg"
-             alt="Lokomotiva řady 371"
-             class="lokomotiva-img">
+        <h2>Základní charakteristika</h2>
 
-        <h3>Technické údaje</h3>
+        <figure>
+            <img src="images/371.jpg"
+                 alt="Elektrická lokomotiva řady 371 Bastard"
+                 class="lokomotiva-img">
+
+            <figcaption>
+                Dvousystémová elektrická lokomotiva řady 371
+            </figcaption>
+        </figure>
+
+        <p>
+            Lokomotiva řady 371 je čtyřnápravová
+            dvousystémová elektrická rychlíková lokomotiva,
+            která vznikla rekonstrukcí původní řady 372.
+        </p>
+
+        <p>
+            Byla určena zejména pro mezinárodní železniční
+            dopravu mezi Českou republikou a Německem.
+            Umožňuje provoz pod stejnosměrnou napájecí
+            soustavou 3 kV a střídavou soustavou
+            15 kV s frekvencí 16,7 Hz.
+        </p>
+
+        <p>
+            Charakteristickými vlastnostmi jsou odporová
+            regulace výkonu, čtyři stejnosměrné trakční
+            motory, elektrodynamická brzda
+            a maximální rychlost 160 km/h.
+        </p>
+
+        <div class="statistiky">
+            <div class="statistiky-grid">
+
+                <div class="statistika">
+                    <span class="counter" data-target="3080">3080</span>
+                    <p>Trvalý výkon (kW)</p>
+                </div>
+
+                <div class="statistika">
+                    <span class="counter" data-target="160">160</span>
+                    <p>Maximální rychlost (km/h)</p>
+                </div>
+
+                <div class="statistika">
+                    <span class="counter" data-target="7">7</span>
+                    <p>Lokomotiv řady 371</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- OBSAH STRÁNKY -->
+
+    <section class="card">
+
+        <h2>Obsah stránky</h2>
+
+        <ul>
+            <li><a href="#historie">Historie a vývoj</a></li>
+            <li><a href="#modernizace">Modernizace řady 372</a></li>
+            <li><a href="#parametry">Podrobné technické parametry</a></li>
+            <li><a href="#konstrukce">Mechanická část</a></li>
+            <li><a href="#podvozky">Podvozky a dvojkolí</a></li>
+            <li><a href="#vypruzeni">Vypružení lokomotivy</a></li>
+            <li><a href="#vyzbroj">Elektrická výzbroj</a></li>
+            <li><a href="#napajeni">Napájecí soustavy</a></li>
+            <li><a href="#transformator">Trakční transformátor</a></li>
+            <li><a href="#regulace">Odporová regulace</a></li>
+            <li><a href="#motory">Trakční motory</a></li>
+            <li><a href="#prenos">Přenos tažných sil</a></li>
+            <li><a href="#brzdy">Brzdová výzbroj</a></li>
+            <li><a href="#edb">Elektrodynamická brzda</a></li>
+            <li><a href="#pneumatika">Pneumatická výzbroj</a></li>
+            <li><a href="#pomocne">Pomocné pohony</a></li>
+            <li><a href="#stanoviste">Stanoviště strojvedoucího</a></li>
+            <li><a href="#zabezpeceni">Zabezpečovací zařízení</a></li>
+            <li><a href="#charakteristika">Trakční charakteristika</a></li>
+            <li><a href="#evidence">Evidence lokomotiv</a></li>
+            <li><a href="#provoz">Provozní historie</a></li>
+            <li><a href="#udrzba">Údržba a životnost</a></li>
+            <li><a href="#vyhody">Výhody a nevýhody</a></li>
+            <li><a href="#zajimavosti">Zajímavosti</a></li>
+            <li><a href="#fotografie">Fotodokumentace</a></li>
+            <li><a href="#zdroje">Zdroje informací</a></li>
+        </ul>
+
+    </section>
+
+
+    <!-- HISTORIE -->
+
+    <section class="card" id="historie">
+
+        <h2>Historie a vývoj</h2>
+
+        <h3>Vznik dvousystémových lokomotiv</h3>
+
+        <p>
+            Rozvoj elektrizované železniční dopravy mezi
+            Československem a Německou demokratickou
+            republikou vyvolal potřebu lokomotiv schopných
+            provozu pod dvěma rozdílnými napájecími soustavami.
+        </p>
+
+        <p>
+            Na československé straně byla používána
+            stejnosměrná soustava 3 kV, zatímco
+            německá železniční síť využívala střídavou
+            soustavu 15 kV, 16,7 Hz.
+        </p>
+
+        <p>
+            Podnik Škoda Plzeň proto vyvinul lokomotivy
+            schopné provozu v obou soustavách.
+            Výsledkem byla řada 372 pro ČSD
+            a odpovídající německá řada, později
+            označená jako 180.
+        </p>
+
+        <h3>Výroba původních lokomotiv</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Parametr</th><th>Hodnota</th></tr>
+            <tr><td>Výrobce</td><td>Škoda Plzeň</td></tr>
+            <tr><td>Výroba prototypů</td><td>1988</td></tr>
+            <tr><td>Sériová výroba</td><td>1990–1991</td></tr>
+            <tr><td>Lokomotivy pro ČSD</td><td>15 kusů</td></tr>
+            <tr><td>Lokomotivy pro DR</td><td>20 kusů</td></tr>
+            <tr><td>Celkový počet původních lokomotiv</td><td>35 kusů</td></tr>
+            <tr><td>Původní maximální rychlost</td><td>120 km/h</td></tr>
+        </table>
+
+        <h3>Vznik řady 371</h3>
+
+        <p>
+            Modernizace železničních koridorů a zvyšování
+            traťových rychlostí vedly k požadavku na úpravu
+            lokomotiv pro rychlost 160 km/h.
+        </p>
+
+        <p>
+            První českou lokomotivou přestavěnou
+            na řadu 371 se stal stroj 372.001,
+            který po rekonstrukci získal označení 371.001-9.
+        </p>
+
+    </section>
+
+
+    <!-- MODERNIZACE -->
+
+    <section class="card" id="modernizace">
+
+        <h2>Modernizace řady 372 na řadu 371</h2>
+
+        <p>
+            Hlavním cílem rekonstrukce bylo přizpůsobení
+            původních lokomotiv požadavkům rychlé
+            mezinárodní osobní dopravy.
+        </p>
+
+        <h3>Rozsah modernizace</h3>
+
+        <ul>
+            <li>Zvýšení maximální rychlosti na 160 km/h.</li>
+            <li>Změna nápravového převodu.</li>
+            <li>Úpravy podvozků pro vyšší rychlost.</li>
+            <li>Doplnění tlumičů vrtivých pohybů podvozků.</li>
+            <li>Úpravy čelních oken.</li>
+            <li>Modernizace rychloměrů.</li>
+            <li>Úpravy zabezpečovacího zařízení.</li>
+            <li>Úpravy sběračů proudu.</li>
+            <li>Náhrada původního pístového kompresoru šroubovým.</li>
+        </ul>
+
+        <h3>Porovnání původního a modernizovaného provedení</h3>
+
+        <div class="tabulka-scroll">
+
+            <table class="technicke-udaje">
+                <tr>
+                    <th>Parametr</th>
+                    <th>Řada 372</th>
+                    <th>Řada 371</th>
+                </tr>
+
+                <tr>
+                    <td>Maximální rychlost</td>
+                    <td>120 km/h</td>
+                    <td>160 km/h</td>
+                </tr>
+
+                <tr>
+                    <td>Nápravový převod</td>
+                    <td>1 : 3,521</td>
+                    <td>1 : 2,62</td>
+                </tr>
+
+                <tr>
+                    <td>Maximální tažná síla</td>
+                    <td>243 kN</td>
+                    <td>205 kN</td>
+                </tr>
+
+                <tr>
+                    <td>Trvalá tažná síla</td>
+                    <td>147 kN</td>
+                    <td>102 kN</td>
+                </tr>
+
+                <tr>
+                    <td>Trvalá rychlost</td>
+                    <td>77 km/h</td>
+                    <td>103 km/h</td>
+                </tr>
+
+                <tr>
+                    <td>Trvalý výkon</td>
+                    <td>3 080 kW</td>
+                    <td>3 080 kW</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <p>
+            Změna převodového poměru umožnila vyšší
+            rychlost jízdy, ale současně vedla ke snížení
+            maximální tažné síly při rozjezdu.
+        </p>
+
+    </section>
+
+
+    <!-- TECHNICKÉ PARAMETRY -->
+
+    <section class="card" id="parametry">
+
+        <h2>Podrobné technické parametry</h2>
+
+        <h3>1. Identifikační a výrobní údaje</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Parametr</th><th>Hodnota</th></tr>
+            <tr><td>Označení řady</td><td>371</td></tr>
+            <tr><td>Výchozí řada</td><td>372</td></tr>
+            <tr><td>Původní označení výchozí řady</td><td>ES 499.2</td></tr>
+            <tr><td>Přezdívka</td><td>Bastard</td></tr>
+            <tr><td>Výrobce</td><td>Škoda Plzeň</td></tr>
+            <tr><td>Země výroby</td><td>Československo</td></tr>
+            <tr><td>Tovární typ výchozí konstrukce</td><td>76 E / 80 E</td></tr>
+            <tr><td>Výroba původních vozidel</td><td>1988–1991</td></tr>
+            <tr><td>Období rekonstrukcí</td><td>1994–2004</td></tr>
+            <tr><td>Počet lokomotiv řady 371</td><td>7</td></tr>
+            <tr><td>Druh vozidla</td><td>Elektrická rychlíková lokomotiva</td></tr>
+            <tr><td>Napájení</td><td>Dvousystémové</td></tr>
+            <tr><td>Historický provozovatel</td><td>České dráhy</td></tr>
+            <tr><td>Mezinárodní označení</td><td>91 54 7 371 xxx-x</td></tr>
+        </table>
+
+
+        <h3>2. Rozměrové parametry</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Parametr</th><th>Hodnota</th></tr>
+            <tr><td>Délka přes nárazníky</td><td>16 800 mm</td></tr>
+            <tr><td>Délka skříně</td><td>15 500 mm</td></tr>
+            <tr><td>Šířka lokomotivy</td><td>2 990 mm</td></tr>
+            <tr><td>Výška se staženými sběrači</td><td>4 627 mm</td></tr>
+            <tr><td>Rozchod koleje</td><td>1 435 mm</td></tr>
+            <tr><td>Rozvor podvozku</td><td>3 200 mm</td></tr>
+            <tr><td>Vzdálenost otočných čepů</td><td>8 300 mm</td></tr>
+            <tr><td>Celkový rozvor (výpočet)</td><td>11 500 mm</td></tr>
+            <tr><td>Průměr nových kol</td><td>1 250 mm</td></tr>
+            <tr><td>Průměr opotřebených kol</td><td>1 180 mm</td></tr>
+            <tr><td>Minimální poloměr oblouku</td><td>120 m</td></tr>
+        </table>
+
+
+        <h3>3. Hmotnostní parametry</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Parametr</th><th>Hodnota</th></tr>
+            <tr><td>Služební hmotnost</td><td>84 t</td></tr>
+            <tr><td>Adhezní hmotnost</td><td>84 t</td></tr>
+            <tr><td>Průměrná hmotnost na nápravu</td><td>21 t</td></tr>
+            <tr><td>Měrný výkon</td><td>36,67 kW/t</td></tr>
+            <tr><td>Specifická hmotnost</td><td>27,3 kg/kW</td></tr>
+        </table>
+
+
+        <h3>4. Výkonové a trakční parametry</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Parametr</th><th>Hodnota</th></tr>
+            <tr><td>Trvalý výkon</td><td>3 080 kW</td></tr>
+            <tr><td>Maximální rychlost</td><td>160 km/h</td></tr>
+            <tr><td>Trvalá rychlost</td><td>103 km/h</td></tr>
+            <tr><td>Maximální tažná síla</td><td>205 kN</td></tr>
+            <tr><td>Trvalá tažná síla</td><td>102 kN</td></tr>
+            <tr><td>Výkon elektrodynamické brzdy</td><td>2 200 kW</td></tr>
+            <tr><td>Nápravový převod</td><td>1 : 2,62</td></tr>
+            <tr><td>Počet hnacích náprav</td><td>4</td></tr>
+            <tr><td>Počet běžných náprav</td><td>0</td></tr>
+            <tr><td>Podíl hnacích náprav</td><td>100 %</td></tr>
+        </table>
+
+
+        <h3>5. Napájecí soustavy</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Parametr</th><th>Hodnota</th></tr>
+            <tr><td>Stejnosměrná soustava</td><td>3 000 V DC</td></tr>
+            <tr><td>Střídavá soustava</td><td>15 000 V AC</td></tr>
+            <tr><td>Frekvence střídavé soustavy</td><td>16,7 Hz</td></tr>
+            <tr><td>Počet napájecích soustav</td><td>2</td></tr>
+            <tr><td>Provoz pod 25 kV / 50 Hz</td><td>Ne</td></tr>
+            <tr><td>Počet sběračů proudu</td><td>2</td></tr>
+            <tr><td>Konstrukce sběračů</td><td>Polopantografová</td></tr>
+            <tr><td>Umístění sběračů</td><td>Střecha lokomotivy</td></tr>
+            <tr><td>Trakční transformátor</td><td>Ano</td></tr>
+            <tr><td>Umístění transformátoru</td><td>Pod hlavním rámem</td></tr>
+            <tr><td>Trakční usměrňovače</td><td>Ano</td></tr>
+        </table>
+
+
+        <h3>6. Regulace výkonu</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Parametr</th><th>Hodnota</th></tr>
+            <tr><td>Druh regulace</td><td>Odporová</td></tr>
+            <tr><td>Regulace trakčního proudu při rozjezdu</td><td>Rozjezdové odporníky</td></tr>
+            <tr><td>Regulace zapojením motorových skupin</td><td>Sériová a paralelní</td></tr>
+            <tr><td>Zeslabování buzení</td><td>Ano</td></tr>
+            <tr><td>Pulzní trakční regulace</td><td>Ne</td></tr>
+            <tr><td>Trakční měniče pro asynchronní motory</td><td>Ne</td></tr>
+            <tr><td>Chlazení odporníků</td><td>Nucené</td></tr>
+            <tr><td>Řízení trakce</td><td>Stupňové</td></tr>
+        </table>
+
+
+        <h3>7. Trakční motory</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Parametr</th><th>Hodnota</th></tr>
+            <tr><td>Typ motoru</td><td>AL 4542 FnT</td></tr>
+            <tr><td>Počet trakčních motorů</td><td>4</td></tr>
+            <tr><td>Počet motorů v podvozku</td><td>2</td></tr>
+            <tr><td>Druh motoru</td><td>Stejnosměrný sériový</td></tr>
+            <tr><td>Počet hlavních pólů</td><td>6</td></tr>
+            <tr><td>Kompenzační vinutí</td><td>Ano</td></tr>
+            <tr><td>Trvalý výkon na motor (výpočet)</td><td>770 kW</td></tr>
+            <tr><td>Trvalý proud</td><td>550 A</td></tr>
+            <tr><td>Hodinový proud</td><td>770 A</td></tr>
+            <tr><td>Jmenovité napětí motoru</td><td>1 500 V</td></tr>
+            <tr><td>Chlazení motorů</td><td>Cizí ventilace</td></tr>
+            <tr><td>Počet motorových skupin</td><td>2</td></tr>
+            <tr><td>Zapojení motorů uvnitř skupiny</td><td>Sériové</td></tr>
+            <tr><td>Zapojení motorových skupin</td><td>Série / paralel</td></tr>
+            <tr><td>Uložení motorů</td><td>V rámu podvozku</td></tr>
+        </table>
+
+
+        <h3>8. Mechanická část a pojezd</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Parametr</th><th>Hodnota</th></tr>
+            <tr><td>Uspořádání pojezdu</td><td>Bo'Bo'</td></tr>
+            <tr><td>Počet podvozků</td><td>2</td></tr>
+            <tr><td>Počet náprav v podvozku</td><td>2</td></tr>
+            <tr><td>Celkový počet dvojkolí</td><td>4</td></tr>
+            <tr><td>Celkový počet kol</td><td>8</td></tr>
+            <tr><td>Materiál skříně</td><td>Ocel</td></tr>
+            <tr><td>Počet stanovišť</td><td>2</td></tr>
+            <tr><td>Strojovna</td><td>Průchozí</td></tr>
+            <tr><td>Stupně vypružení</td><td>2</td></tr>
+            <tr><td>Přenos momentu motoru</td><td>Kloubová spojka Škoda</td></tr>
+            <tr><td>Nápravový převod</td><td>Jednostranný</td></tr>
+            <tr><td>Ozubený převod</td><td>Čelní ozubení</td></tr>
+            <tr><td>Tlumení svislých pohybů</td><td>Hydraulické</td></tr>
+            <tr><td>Tlumení příčných pohybů</td><td>Hydraulické</td></tr>
+            <tr><td>Tlumiče vrtivých pohybů</td><td>Ano</td></tr>
+        </table>
+
+
+        <h3>9. Brzdová výzbroj</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Parametr</th><th>Hodnota</th></tr>
+            <tr><td>Samočinná tlaková brzda</td><td>DAKO DK-GP</td></tr>
+            <tr><td>Brzdič samočinné brzdy</td><td>DAKO BS2</td></tr>
+            <tr><td>Přímočinná brzda</td><td>DAKO BP</td></tr>
+            <tr><td>Brzdový rozváděč</td><td>DAKO DK-LTR</td></tr>
+            <tr><td>Mechanická brzda</td><td>Špalíková</td></tr>
+            <tr><td>Počet brzdových jednotek</td><td>8</td></tr>
+            <tr><td>Průměr brzdového válce</td><td>8 palců</td></tr>
+            <tr><td>Průměr válce v milimetrech</td><td>203,2 mm</td></tr>
+            <tr><td>Maximální tlak v brzdovém válci</td><td>4 bar</td></tr>
+            <tr><td>Ruční brzda</td><td>Ano</td></tr>
+            <tr><td>Elektrodynamická brzda</td><td>Ano</td></tr>
+            <tr><td>Druh elektrodynamické brzdy</td><td>Odporová</td></tr>
+            <tr><td>Výkon EDB</td><td>2 200 kW</td></tr>
+            <tr><td>Rekuperační brzdění</td><td>Ne</td></tr>
+        </table>
+
+        <h3>10. Brzdicí váhy</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Režim</th><th>Brzdicí váha</th></tr>
+            <tr><td>G</td><td>38 t</td></tr>
+            <tr><td>P</td><td>107 t</td></tr>
+            <tr><td>P + E</td><td>130 t</td></tr>
+            <tr><td>P + E 160</td><td>176 t</td></tr>
+            <tr><td>Ruční brzda</td><td>16 t</td></tr>
+        </table>
+
+        <p>
+            Brzdicí váha je smluvní technický údaj
+            vyjadřující účinek brzdy. Nejedná se
+            o skutečnou hmotnost brzdového zařízení.
+        </p>
+
+
+        <h3>11. Pneumatická výzbroj</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Parametr</th><th>Hodnota</th></tr>
+            <tr><td>Původní kompresor řady 372</td><td>K 3 Lok-2</td></tr>
+            <tr><td>Kompresor po modernizaci</td><td>ATMOS SE 120 Lok</td></tr>
+            <tr><td>Druh modernizovaného kompresoru</td><td>Šroubový</td></tr>
+            <tr><td>Počet hlavních kompresorů</td><td>1</td></tr>
+            <tr><td>Pohon kompresoru</td><td>Elektrický</td></tr>
+            <tr><td>Počet hlavních vzduchojemů</td><td>2</td></tr>
+            <tr><td>Celkový objem hlavních vzduchojemů</td><td>900 l</td></tr>
+            <tr><td>Tlak hlavních vzduchojemů</td><td>10 bar</td></tr>
+            <tr><td>Objem pomocného vzduchojemu</td><td>150 l</td></tr>
+            <tr><td>Pneumatické pískování</td><td>Ano</td></tr>
+        </table>
+
+
+        <h3>12. Stanoviště a řízení</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Parametr</th><th>Hodnota</th></tr>
+            <tr><td>Počet řídicích stanovišť</td><td>2</td></tr>
+            <tr><td>Poloha strojvedoucího</td><td>Pravá strana</td></tr>
+            <tr><td>Obousměrný provoz</td><td>Ano</td></tr>
+            <tr><td>Řídicí pult</td><td>Unifikované provedení</td></tr>
+            <tr><td>Řízení výkonu</td><td>Stupňové</td></tr>
+            <tr><td>Směrové řízení</td><td>Ano</td></tr>
+            <tr><td>Elektronický rychloměr po modernizaci</td><td>Ano</td></tr>
+            <tr><td>Vytápění stanoviště</td><td>Ano</td></tr>
+            <tr><td>Měření trakčního proudu</td><td>Ano</td></tr>
+            <tr><td>Měření tlaku v pneumatických obvodech</td><td>Ano</td></tr>
+        </table>
+
+
+        <h3>13. Vypočtené technické hodnoty</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Parametr</th><th>Hodnota</th></tr>
+            <tr><td>Maximální rychlost v m/s</td><td>44,44 m/s</td></tr>
+            <tr><td>Měrný trakční výkon</td><td>36,67 kW/t</td></tr>
+            <tr><td>Měrný výkon EDB</td><td>26,19 kW/t</td></tr>
+            <tr><td>Maximální tažná síla na nápravu</td><td>51,25 kN</td></tr>
+            <tr><td>Trvalá tažná síla na nápravu</td><td>25,5 kN</td></tr>
+            <tr><td>Teoretický součinitel adheze</td><td>0,249</td></tr>
+            <tr><td>Poloměr nového kola</td><td>625 mm</td></tr>
+            <tr><td>Poloměr opotřebeného kola</td><td>590 mm</td></tr>
+            <tr><td>Obvod nového kola</td><td>3,927 m</td></tr>
+            <tr><td>Obvod opotřebeného kola</td><td>3,707 m</td></tr>
+            <tr><td>Otáčky nových kol při 160 km/h</td><td>679 ot/min</td></tr>
+            <tr><td>Otáčky motoru při 160 km/h</td><td>1 779 ot/min</td></tr>
+            <tr><td>Otáčky nových kol při 120 km/h</td><td>509 ot/min</td></tr>
+            <tr><td>Otáčky motoru při 120 km/h</td><td>1 334 ot/min</td></tr>
+            <tr><td>Kinetická energie samotné lokomotivy při 160 km/h</td><td>82,96 MJ</td></tr>
+            <tr><td>Kinetická energie při 160 km/h v kWh</td><td>23,05 kWh</td></tr>
+            <tr><td>Poměr výkonu EDB k trakčnímu výkonu</td><td>71,4 %</td></tr>
+            <tr><td>Zvýšení maximální rychlosti oproti 372</td><td>33,3 %</td></tr>
+            <tr><td>Pokles maximální tažné síly oproti 372</td><td>15,6 %</td></tr>
+        </table>
+
+        <p class="technicka-poznamka">
+            Uvedené parametry vycházejí z dostupných
+            odborných zdrojů. Skutečné provedení jednotlivých
+            lokomotiv se může lišit. Vypočtené parametry
+            jsou teoretické hodnoty odvozené ze základních
+            technických údajů.
+        </p>
+
+    </section>
+
+
+    <!-- MECHANICKÁ ČÁST -->
+
+    <section class="card" id="konstrukce">
+
+        <h2>Mechanická část</h2>
+
+        <h3>Lokomotivní skříň</h3>
+
+        <p>
+            Lokomotiva má ocelovou skříň se dvěma
+            koncovými stanovišti strojvedoucího.
+            Mezi stanovišti se nachází průchozí strojovna
+            s hlavními elektrickými a pomocnými zařízeními.
+        </p>
+
+        <h3>Hlavní rám</h3>
+
+        <p>
+            Hlavní rám přenáší zatížení mezi skříní,
+            podvozky, nárazníky a spřahovacím zařízením.
+            Současně nese část technologického vybavení.
+        </p>
+
+        <h3>Hlavní konstrukční celky</h3>
+
+        <ul>
+            <li>Ocelová lokomotivní skříň.</li>
+            <li>Hlavní nosný rám.</li>
+            <li>Dva dvounápravové podvozky.</li>
+            <li>Čtyři hnací dvojkolí.</li>
+            <li>Primární a sekundární vypružení.</li>
+            <li>Nápravové převody.</li>
+            <li>Narážecí a spřahovací ústrojí.</li>
+            <li>Střešní elektrická výzbroj.</li>
+            <li>Trakční transformátor pod rámem.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- PODVOZKY -->
+
+    <section class="card" id="podvozky">
+
+        <h2>Podvozky a dvojkolí</h2>
+
+        <p>
+            Pojezd lokomotivy tvoří dva dvounápravové
+            podvozky. Každé dvojkolí je poháněno
+            vlastním trakčním motorem.
+        </p>
+
+        <h3>Funkce podvozků</h3>
+
+        <ul>
+            <li>Přenos svislého zatížení na kolej.</li>
+            <li>Vedení vozidla v obloucích.</li>
+            <li>Přenos trakčních a brzdových sil.</li>
+            <li>Omezení dynamických účinků jízdy.</li>
+            <li>Zajištění stability při vyšších rychlostech.</li>
+        </ul>
+
+        <h3>Nápravový převod</h3>
+
+        <p>
+            Oproti původní řadě 372 byl převodový
+            poměr změněn z hodnoty 1 : 3,521
+            na hodnotu 1 : 2,62.
+        </p>
+
+        <p>
+            Při stejných otáčkách trakčního motoru
+            tak dvojkolí dosahuje vyšších otáček,
+            což umožňuje vyšší rychlost vozidla.
+            Současně se však snižuje násobení
+            točivého momentu.
+        </p>
+
+    </section>
+
+
+    <!-- VYPRUŽENÍ -->
+
+    <section class="card" id="vypruzeni">
+
+        <h2>Vypružení lokomotivy</h2>
+
+        <h3>Primární vypružení</h3>
+
+        <p>
+            Primární vypružení omezuje přenos nerovností
+            koleje z dvojkolí na rám podvozku.
+        </p>
+
+        <h3>Sekundární vypružení</h3>
+
+        <p>
+            Sekundární vypružení působí mezi podvozkem
+            a lokomotivní skříní. Přispívá ke klidnému
+            chodu vozidla a omezení vibrací.
+        </p>
+
+        <h3>Tlumiče vrtivých pohybů</h3>
+
+        <p>
+            V souvislosti se zvýšením maximální rychlosti
+            byly použity podélné hydraulické tlumiče,
+            které omezují nežádoucí natáčení podvozků
+            vůči skříni při jízdě vyšší rychlostí.
+        </p>
+
+        <div class="energeticke-schema">
+            <div>Lokomotivní skříň</div>
+            <span>↓</span>
+            <div>Sekundární vypružení</div>
+            <span>↓</span>
+            <div>Rám podvozku</div>
+            <span>↓</span>
+            <div>Primární vypružení</div>
+            <span>↓</span>
+            <div>Dvojkolí</div>
+            <span>↓</span>
+            <div>Kolejnice</div>
+        </div>
+
+    </section>
+
+
+    <!-- ELEKTRICKÁ VÝZBROJ -->
+
+    <section class="card" id="vyzbroj">
+
+        <h2>Elektrická výzbroj</h2>
+
+        <p>
+            Elektrická výzbroj umožňuje využívat
+            dva rozdílné systémy trakčního napájení
+            při zachování stejnosměrných trakčních motorů.
+        </p>
+
+        <h3>Hlavní elektrická zařízení</h3>
+
+        <ul>
+            <li>Polopantografové sběrače proudu.</li>
+            <li>Hlavní vypínače a ochranné prvky.</li>
+            <li>Trakční transformátor.</li>
+            <li>Trakční usměrňovače.</li>
+            <li>Rozjezdové odporníky.</li>
+            <li>Brzdové odporníky.</li>
+            <li>Trakční stykače.</li>
+            <li>Kontroléry.</li>
+            <li>Čtyři trakční motory.</li>
+            <li>Pomocné elektrické pohony.</li>
+            <li>Akumulátorová baterie.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- NAPÁJECÍ SOUSTAVY -->
+
+    <section class="card" id="napajeni">
+
+        <h2>Napájecí soustavy</h2>
+
+        <h3>Stejnosměrná soustava 3 kV DC</h3>
+
+        <p>
+            Při provozu na stejnosměrné trakční soustavě
+            není pro napájení trakčních motorů nutná
+            transformace střídavého napětí.
+        </p>
+
+        <div class="energeticke-schema">
+            <div>Trolejové vedení 3 kV DC</div>
+            <span>↓</span>
+            <div>Sběrač proudu</div>
+            <span>↓</span>
+            <div>Hlavní vypínač</div>
+            <span>↓</span>
+            <div>Odporová regulace</div>
+            <span>↓</span>
+            <div>Trakční motory</div>
+            <span>↓</span>
+            <div>Nápravové převody</div>
+            <span>↓</span>
+            <div>Hnací dvojkolí</div>
+        </div>
+
+        <h3>Střídavá soustava 15 kV AC</h3>
+
+        <p>
+            Při provozu na německé střídavé soustavě
+            je napětí upravováno transformátorem
+            a následně usměrňováno pro napájení
+            stejnosměrných trakčních motorů.
+        </p>
+
+        <div class="energeticke-schema">
+            <div>Trolejové vedení 15 kV / 16,7 Hz</div>
+            <span>↓</span>
+            <div>Sběrač proudu</div>
+            <span>↓</span>
+            <div>Hlavní vypínač</div>
+            <span>↓</span>
+            <div>Trakční transformátor</div>
+            <span>↓</span>
+            <div>Trakční usměrňovač</div>
+            <span>↓</span>
+            <div>Odporová regulace</div>
+            <span>↓</span>
+            <div>Stejnosměrné trakční motory</div>
+            <span>↓</span>
+            <div>Hnací dvojkolí</div>
+        </div>
+
+        <p class="technicka-poznamka">
+            Schémata představují zjednodušený
+            funkční princip obou napájecích soustav,
+            nikoliv úplné elektrické zapojení vozidla.
+        </p>
+
+        <h3>Porovnání napájecích soustav</h3>
 
         <table class="technicke-udaje">
             <tr>
                 <th>Parametr</th>
-                <th>Hodnota</th>
+                <th>DC</th>
+                <th>AC</th>
             </tr>
             <tr>
-                <td>Výrobce</td>
-                <td>Škoda Plzeň</td>
+                <td>Napětí</td>
+                <td>3 kV</td>
+                <td>15 kV</td>
             </tr>
             <tr>
-                <td>Původní výroba</td>
-                <td>1988–1991 (řada 372)</td>
+                <td>Druh proudu</td>
+                <td>Stejnosměrný</td>
+                <td>Střídavý</td>
             </tr>
             <tr>
-                <td>Vznik řady 371</td>
-                <td>Modernizací řady 372</td>
+                <td>Frekvence</td>
+                <td>—</td>
+                <td>16,7 Hz</td>
             </tr>
             <tr>
-                <td>Napájecí soustavy</td>
-                <td>3 kV DC / 15 kV 16,7 Hz AC</td>
+                <td>Trakční transformátor</td>
+                <td>Vynechán</td>
+                <td>Využíván</td>
             </tr>
             <tr>
-                <td>Maximální rychlost</td>
-                <td>160 km/h</td>
-            </tr>
-            <tr>
-                <td>Trvalý výkon</td>
-                <td>3 080 kW</td>
-            </tr>
-            <tr>
-                <td>Uspořádání pojezdu</td>
-                <td>Bo'Bo'</td>
-            </tr>
-            <tr>
-                <td>Hmotnost</td>
-                <td>Přibližně 84 t</td>
+                <td>Trakční usměrnění</td>
+                <td>Není potřebné</td>
+                <td>Potřebné</td>
             </tr>
         </table>
 
-        <h3>Historie lokomotivy</h3>
-        <p>
-            Lokomotivy řady 371 vznikly modernizací
-            původní řady 372. Úpravy umožnily
-            zvýšit maximální rychlost na 160 km/h.
-        </p>
-
-        <h3>Využití v provozu</h3>
-        <p>
-            Lokomotivy řady 371 byly využívány
-            zejména v mezinárodní osobní dopravě
-            mezi Českou republikou a Německem.
-            Díky dvěma napájecím soustavám
-            mohly překračovat hranice bez výměny
-            lokomotivy kvůli rozdílnému napájení.
-        </p>
     </section>
 
-<section class="card">
-    <h2>Další fotografie řady 371</h2>
 
-    <figure>
-        <img src="images/371-2.jpg"
-             alt="Lokomotiva řady 371"
-             class="lokomotiva-img">
+    <!-- TRANSFORMÁTOR -->
 
-        <figcaption>
-            Lokomotiva řady 371 v provozu
-        </figcaption>
-    </figure>
-</section>
+    <section class="card" id="transformator">
 
-<section class="card">
-    <h2>Historie lokomotivy řady 371</h2>
+        <h2>Trakční transformátor</h2>
 
-    <p>
-        Lokomotivy řady 371 vznikly modernizací
-        původní řady 372, kterou vyráběla
-        Škoda Plzeň v letech 1988 až 1991.
-    </p>
+        <p>
+            Trakční transformátor je umístěn
+            pod hlavním rámem mezi podvozky.
+            Umožňuje přizpůsobení střídavého napájecího
+            napětí potřebám elektrické výzbroje.
+        </p>
 
-    <p>
-        Hlavním důvodem modernizace bylo
-        zvýšení maximální rychlosti
-        ze 120 km/h na 160 km/h.
-    </p>
+        <h3>Hlavní části transformátoru</h3>
 
-    <h3>Mezinárodní železniční doprava</h3>
+        <ul>
+            <li>Magnetický obvod.</li>
+            <li>Primární vinutí.</li>
+            <li>Sekundární vinutí.</li>
+            <li>Elektrická izolace.</li>
+            <li>Transformátorový olej.</li>
+            <li>Chladicí a ochranná zařízení.</li>
+        </ul>
 
-    <p>
-        Lokomotivy byly využívány především
-        na mezinárodních vlacích mezi
-        Prahou, Děčínem a Drážďany,
-        v minulosti také směrem do Berlína.
-    </p>
-</section>
+        <h3>Chlazení transformátoru</h3>
 
-<section class="card">
-    <h2>Technické zajímavosti</h2>
+        <p>
+            Teplo vznikající v transformátoru musí být
+            odváděno, aby nedocházelo k nadměrnému
+            tepelnému namáhání izolace a dalších součástí.
+        </p>
 
-    <ul>
-        <li>Maximální rychlost: 160 km/h</li>
-        <li>Trvalý výkon: 3 080 kW</li>
-        <li>Uspořádání náprav: Bo'Bo'</li>
-        <li>Napájení: 3 kV DC a 15 kV AC, 16,7 Hz</li>
-        <li>Regulace výkonu: odporová</li>
-        <li>Přezdívka: Bastard</li>
-    </ul>
+    </section>
 
-    <h3>Modernizace</h3>
 
-    <p>
-        Při přestavbě původní řady 372
-        byl upraven převod pohonu pro
-        dosažení vyšší rychlosti.
-        Modernizované lokomotivy dostaly
-        označení řada 371.
-    </p>
-</section>
+    <!-- ODPOROVÁ REGULACE -->
 
-<section class="card">
-    <h2>Použité zdroje</h2>
+    <section class="card" id="regulace">
 
-    <ul>
-        <li>
-            <a href="https://www.atlaslokomotiv.net/loko-372.html"
-               target="_blank" rel="noopener noreferrer">
-                Atlas lokomotiv – řady 371 a 372
-            </a>
-        </li>
-        <li>
-            <a href="https://zeleznicar.cd.cz/"
-               target="_blank" rel="noopener noreferrer">
-                Železničář – České dráhy
-            </a>
-        </li>
-    </ul>
-</section>
-<section class="card">
-    <h2>Porovnání s lokomotivou 242</h2>
+        <h2>Odporová regulace výkonu</h2>
 
-    <p>
-        Zajímá vás, jaké jsou rozdíly mezi
-        elektrickými lokomotivami řad 242 a 371?
-        Podívejte se na jejich technické
-        parametry a vlastnosti.
-    </p>
+        <p>
+            Řada 371 využívá tradiční odporovou regulaci
+            stejnosměrných trakčních motorů.
+            Při rozjezdu je trakční proud omezován
+            elektrickými odpory.
+        </p>
 
-    <a href="porovnani.html" class="tlacitko">
-        Zobrazit porovnání lokomotiv
-    </a>
-</section>
+        <h3>Princip rozjezdových odporníků</h3>
+
+        <p>
+            Při nízkých otáčkách motorů by bez omezení
+            mohl vzniknout nadměrný trakční proud.
+            Odporníky umožňují jeho omezení
+            a postupnou změnu trakčního výkonu.
+        </p>
+
+        <h3>Sériové zapojení</h3>
+
+        <p>
+            Při sériovém řazení motorových skupin
+            se napájecí napětí rozděluje mezi skupiny.
+            Toto uspořádání je vhodné pro nižší
+            rychlostní oblast.
+        </p>
+
+        <div class="energeticke-schema">
+            <div>Napájecí napětí</div>
+            <span>↓</span>
+            <div>Motorová skupina 1</div>
+            <span>↓</span>
+            <div>Motorová skupina 2</div>
+        </div>
+
+        <h3>Paralelní zapojení</h3>
+
+        <p>
+            Paralelní zapojení umožňuje napájení
+            obou motorových skupin ze stejného
+            napěťového uzlu a využití vyšší rychlostní oblasti.
+        </p>
+
+        <h3>Zeslabování buzení</h3>
+
+        <p>
+            Zeslabování magnetického buzení motorů
+            umožňuje zvýšení jejich otáček.
+            Současně se mění jejich momentová charakteristika.
+        </p>
+
+        <h3>Nevýhody odporové regulace</h3>
+
+        <ul>
+            <li>Energetické ztráty v odpornících.</li>
+            <li>Vznik odpadního tepla.</li>
+            <li>Stupňové řízení výkonu.</li>
+            <li>Mechanické opotřebení spínacích zařízení.</li>
+            <li>Vyšší náročnost údržby oproti moderní regulaci.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- TRAKČNÍ MOTORY -->
+
+    <section class="card" id="motory">
+
+        <h2>Trakční motory AL 4542 FnT</h2>
+
+        <p>
+            Pohon lokomotivy zajišťují čtyři
+            stejnosměrné sériové trakční motory.
+            Každý motor pohání jedno dvojkolí.
+        </p>
+
+        <h3>Hlavní části motoru</h3>
+
+        <ul>
+            <li>Stator.</li>
+            <li>Rotor neboli kotva.</li>
+            <li>Hlavní magnetické póly.</li>
+            <li>Pomocné póly.</li>
+            <li>Budicí vinutí.</li>
+            <li>Kompenzační vinutí.</li>
+            <li>Komutátor.</li>
+            <li>Uhlíkové kartáče.</li>
+            <li>Hřídel.</li>
+            <li>Ložiska.</li>
+        </ul>
+
+        <h3>Motorové skupiny</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Podvozek</th><th>Motory</th><th>Zapojení</th></tr>
+            <tr><td>První podvozek</td><td>M1 + M2</td><td>Sériové</td></tr>
+            <tr><td>Druhý podvozek</td><td>M3 + M4</td><td>Sériové</td></tr>
+        </table>
+
+        <h3>Cizí ventilace</h3>
+
+        <p>
+            Trakční motory jsou chlazeny vzduchem
+            přiváděným pomocí samostatných ventilátorů.
+            Chlazení proto není přímo závislé
+            na otáčkách trakčního motoru.
+        </p>
+
+    </section>
+
+
+    <!-- PŘENOS TAŽNÝCH SIL -->
+
+    <section class="card" id="prenos">
+
+        <h2>Přenos tažných sil</h2>
+
+        <div class="energeticke-schema">
+            <div>Trakční motor</div>
+            <span>↓</span>
+            <div>Kloubová spojka Škoda</div>
+            <span>↓</span>
+            <div>Nápravový převod</div>
+            <span>↓</span>
+            <div>Hnací dvojkolí</div>
+            <span>↓</span>
+            <div>Kontakt kola a kolejnice</div>
+            <span>↓</span>
+            <div>Tažná síla vozidla</div>
+        </div>
+
+        <h3>Adheze</h3>
+
+        <p>
+            Využitelná tažná síla je ovlivněna
+            adhezními vlastnostmi kontaktu kola
+            a kolejnice. Vlhkost, námraza a nečistoty
+            mohou dostupnou adhezi výrazně omezit.
+        </p>
+
+        <h3>Pískovací zařízení</h3>
+
+        <p>
+            Pískování může zlepšit přenos síly
+            mezi hnacími koly a kolejnicemi
+            při zhoršených adhezních podmínkách.
+        </p>
+
+    </section>
+
+
+    <!-- BRZDOVÁ VÝZBROJ -->
+
+    <section class="card" id="brzdy">
+
+        <h2>Brzdová výzbroj</h2>
+
+        <h3>Samočinná tlaková brzda</h3>
+
+        <p>
+            Slouží k průběžnému brzdění vlakové
+            soupravy. Brzdový účinek je řízen
+            prostřednictvím změn tlaku v hlavním potrubí.
+        </p>
+
+        <h3>Přímočinná brzda</h3>
+
+        <p>
+            Přímočinná brzda umožňuje ovládání
+            tlakové brzdy samotné lokomotivy
+            nezávisle na brzdě připojených vozidel.
+        </p>
+
+        <h3>Ruční brzda</h3>
+
+        <p>
+            Mechanická ruční brzda slouží především
+            k zajištění odstaveného vozidla.
+        </p>
+
+        <h3>Špalíková brzda</h3>
+
+        <p>
+            Brzdové špalíky působí na jízdní plochy kol.
+            Třením je kinetická energie vozidla
+            přeměňována na tepelnou energii.
+        </p>
+
+    </section>
+
+
+    <!-- ELEKTRODYNAMICKÁ BRZDA -->
+
+    <section class="card" id="edb">
+
+        <h2>Elektrodynamická brzda</h2>
+
+        <p>
+            Lokomotiva řady 371 je vybavena
+            odporovou elektrodynamickou brzdou
+            s uváděným výkonem 2 200 kW.
+        </p>
+
+        <p>
+            Při elektrodynamickém brzdění pracují
+            trakční motory v generátorickém režimu.
+            Vznikající elektrická energie je přeměňována
+            v brzdových odpornících na teplo.
+        </p>
+
+        <div class="energeticke-schema">
+            <div>Kinetická energie vozidla</div>
+            <span>↓</span>
+            <div>Otáčení hnacích dvojkolí</div>
+            <span>↓</span>
+            <div>Trakční motory v generátorickém režimu</div>
+            <span>↓</span>
+            <div>Brzdové odporníky</div>
+            <span>↓</span>
+            <div>Tepelná energie</div>
+        </div>
+
+        <h3>Výhody elektrodynamického brzdění</h3>
+
+        <ul>
+            <li>Omezení opotřebení brzdových špalíků.</li>
+            <li>Snížení tepelného zatížení jízdních ploch kol.</li>
+            <li>Možnost dlouhodobějšího brzdění.</li>
+            <li>Doplnění účinku mechanické brzdy.</li>
+        </ul>
+
+        <h3>Rozdíl mezi odporovou a rekuperační brzdou</h3>
+
+        <table class="technicke-udaje">
+            <tr><th>Parametr</th><th>Odporová</th><th>Rekuperační</th></tr>
+            <tr><td>Vznik elektrické energie</td><td>Ano</td><td>Ano</td></tr>
+            <tr><td>Přeměna energie na teplo v odpornících</td><td>Ano</td><td>Ne jako hlavní princip</td></tr>
+            <tr><td>Vrácení energie do troleje</td><td>Ne</td><td>Ano</td></tr>
+            <tr><td>Použití u řady 371</td><td>Ano</td><td>Ne</td></tr>
+        </table>
+
+    </section>
+
+
+    <!-- PNEUMATICKÁ VÝZBROJ -->
+
+    <section class="card" id="pneumatika">
+
+        <h2>Pneumatická výzbroj</h2>
+
+        <p>
+            Pneumatický systém zajišťuje dodávku
+            stlačeného vzduchu pro brzdy a další
+            pneumaticky ovládaná zařízení.
+        </p>
+
+        <h3>Kompresor</h3>
+
+        <p>
+            V průběhu modernizací byl původní pístový
+            kompresor nahrazen šroubovým kompresorem
+            ATMOS SE 120 Lok.
+        </p>
+
+        <h3>Hlavní části pneumatické soustavy</h3>
+
+        <ul>
+            <li>Kompresor.</li>
+            <li>Hlavní vzduchojemy.</li>
+            <li>Pomocný vzduchojem.</li>
+            <li>Brzdové rozváděče.</li>
+            <li>Brzdiče.</li>
+            <li>Brzdové válce.</li>
+            <li>Pneumatické potrubí.</li>
+            <li>Řídicí a pojistné ventily.</li>
+        </ul>
+
+        <div class="energeticke-schema">
+            <div>Kompresor</div>
+            <span>↓</span>
+            <div>Hlavní vzduchojemy – 900 litrů</div>
+            <span>↓</span>
+            <div>Rozvod stlačeného vzduchu</div>
+            <span>↓</span>
+            <div>Regulační a řídicí zařízení</div>
+            <span>↓</span>
+            <div>Pneumatické spotřebiče</div>
+        </div>
+
+    </section>
+
+
+    <!-- POMOCNÉ POHONY -->
+
+    <section class="card" id="pomocne">
+
+        <h2>Pomocné pohony</h2>
+
+        <p>
+            Pomocné pohony a elektrické obvody zajišťují
+            činnost zařízení, která nejsou určena
+            k přímému pohonu dvojkolí.
+        </p>
+
+        <ul>
+            <li>Ventilátory trakčních motorů.</li>
+            <li>Ventilátory odporníků.</li>
+            <li>Pohon kompresoru.</li>
+            <li>Chlazení trakčního transformátoru.</li>
+            <li>Osvětlení lokomotivy.</li>
+            <li>Nabíjení akumulátorové baterie.</li>
+            <li>Napájení řídicích a signalizačních obvodů.</li>
+            <li>Napájení vlakového vytápění.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- STANOVIŠTĚ -->
+
+    <section class="card" id="stanoviste">
+
+        <h2>Stanoviště strojvedoucího</h2>
+
+        <p>
+            Lokomotiva má dvě koncová stanoviště
+            s pravostranným uspořádáním řídicího pultu.
+            Z obou stanovišť lze vozidlo řídit
+            v příslušném směru jízdy.
+        </p>
+
+        <h3>Ovládací prvky</h3>
+
+        <ul>
+            <li>Řídicí kontrolér.</li>
+            <li>Směrové řízení.</li>
+            <li>Brzdič samočinné brzdy.</li>
+            <li>Brzdič přímočinné brzdy.</li>
+            <li>Ovládání elektrodynamické brzdy.</li>
+            <li>Ovládání sběračů proudu.</li>
+            <li>Ovládání hlavních vypínačů.</li>
+            <li>Ovládání pomocných zařízení.</li>
+            <li>Ovládání osvětlení.</li>
+        </ul>
+
+        <h3>Měřicí přístroje</h3>
+
+        <ul>
+            <li>Rychloměr.</li>
+            <li>Ukazatele elektrického napětí.</li>
+            <li>Ampérmetry trakčního proudu.</li>
+            <li>Brzdové manometry.</li>
+            <li>Signalizační kontrolky.</li>
+            <li>Ukazatele provozních stavů.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- ZABEZPEČOVACÍ ZAŘÍZENÍ -->
+
+    <section class="card" id="zabezpeceni">
+
+        <h2>Zabezpečovací zařízení</h2>
+
+        <p>
+            Mezinárodní provoz vyžadoval vybavení
+            lokomotiv zařízeními odpovídajícími
+            požadavkům české a německé železniční sítě.
+        </p>
+
+        <p>
+            Součástí modernizací byly také úpravy
+            vlakových zabezpečovačů a rychloměrů.
+        </p>
+
+        <h3>Elektrické ochrany</h3>
+
+        <ul>
+            <li>Ochrana před nadměrným proudem.</li>
+            <li>Ochrana před elektrickými poruchami.</li>
+            <li>Kontrola provozních stavů elektrické výzbroje.</li>
+            <li>Tepelné ochrany příslušných zařízení.</li>
+        </ul>
+
+        <p class="technicka-poznamka">
+            Přesné vybavení vlakovými zabezpečovači,
+            radiostanicemi a dalšími zařízeními je nutné
+            posuzovat podle konkrétního stroje a období.
+        </p>
+
+    </section>
+
+
+    <!-- TRAKČNÍ CHARAKTERISTIKA -->
+
+    <section class="card" id="charakteristika">
+
+        <h2>Trakční charakteristika</h2>
+
+        <p>
+            Trakční charakteristika vyjadřuje závislost
+            tažné síly lokomotivy na rychlosti.
+        </p>
+
+        <h3>Vztah mezi výkonem a tažnou silou</h3>
+
+        <p style="text-align: center; font-size: 26px;">
+            P = F × v
+        </p>
+
+        <ul>
+            <li>P – mechanický výkon [W]</li>
+            <li>F – tažná síla [N]</li>
+            <li>v – rychlost [m/s]</li>
+        </ul>
+
+        <table class="technicke-udaje">
+            <tr><th>Rychlost</th><th>Teoretická tažná síla</th></tr>
+            <tr><td>20 km/h</td><td>205 kN</td></tr>
+            <tr><td>40 km/h</td><td>205 kN</td></tr>
+            <tr><td>60 km/h</td><td>184,8 kN</td></tr>
+            <tr><td>80 km/h</td><td>138,6 kN</td></tr>
+            <tr><td>100 km/h</td><td>110,9 kN</td></tr>
+            <tr><td>120 km/h</td><td>92,4 kN</td></tr>
+            <tr><td>140 km/h</td><td>79,2 kN</td></tr>
+            <tr><td>160 km/h</td><td>69,3 kN</td></tr>
+        </table>
+
+        <h3>Graf teoretické tažné síly</h3>
+
+        <svg viewBox="0 0 600 350"
+             width="100%"
+             role="img"
+             aria-label="Teoretická trakční charakteristika lokomotivy 371">
+
+            <rect width="600" height="350"
+                  fill="#f1f5f9" rx="12"/>
+
+            <g stroke="#cbd5e1" stroke-width="1">
+                <line x1="60" y1="40" x2="560" y2="40"/>
+                <line x1="60" y1="100" x2="560" y2="100"/>
+                <line x1="60" y1="160" x2="560" y2="160"/>
+                <line x1="60" y1="220" x2="560" y2="220"/>
+                <line x1="60" y1="280" x2="560" y2="280"/>
+            </g>
+
+            <g stroke="#334155" stroke-width="2">
+                <line x1="60" y1="30" x2="60" y2="280"/>
+                <line x1="60" y1="280" x2="560" y2="280"/>
+            </g>
+
+            <polyline
+                points="60,56.4 122.5,56.4 185,56.4
+                        228.9,56.4 247.5,78.4
+                        310,128.8 372.5,159
+                        435,179.2 497.5,193.6 560,204.4"
+                fill="none"
+                stroke="#2563eb"
+                stroke-width="4"
+                stroke-linejoin="round"/>
+
+            <circle cx="381.9" cy="168.7"
+                    r="5" fill="#16a34a"/>
+
+            <g font-size="13" fill="#334155">
+
+                <text x="22" y="45">220</text>
+                <text x="22" y="105">165</text>
+                <text x="22" y="165">110</text>
+                <text x="30" y="225">55</text>
+                <text x="38" y="285">0</text>
+
+                <text x="56" y="300">0</text>
+                <text x="175" y="300">40</text>
+                <text x="300" y="300">80</text>
+                <text x="425" y="300">120</text>
+                <text x="545" y="300">160</text>
+
+                <text x="60" y="20">Tažná síla (kN)</text>
+                <text x="410" y="330">Rychlost (km/h)</text>
+
+                <text x="390" y="157" fill="#166534">
+                    Trvalý bod
+                </text>
+
+            </g>
+
+        </svg>
+
+        <p class="technicka-poznamka">
+            Modrá křivka představuje teoretický model
+            při výkonu 3 080 kW a omezení tažné síly
+            na 205 kN. Zelený bod odpovídá publikované
+            trvalé tažné síle 102 kN při rychlosti 103 km/h.
+            Nejedná se o naměřenou charakteristiku výrobce.
+            Model nezahrnuje všechny elektrické,
+            mechanické a tepelné ztráty.
+        </p>
+
+    </section>
+
+
+    <!-- EVIDENCE LOKOMOTIV -->
+
+    <section class="card" id="evidence">
+
+        <h2>Evidence jednotlivých lokomotiv</h2>
+
+        <p>
+            Historický park řady 371 zahrnoval
+            sedm elektrických lokomotiv.
+        </p>
+
+        <table class="technicke-udaje">
+            <tr>
+                <th>Označení</th>
+                <th>Původní označení</th>
+            </tr>
+
+            <tr><td>371.001-9</td><td>372.001-8</td></tr>
+            <tr><td>371.002-7</td><td>372.002-6</td></tr>
+            <tr><td>371.003-5</td><td>372.003-4</td></tr>
+            <tr><td>371.004-3</td><td>372.004-2</td></tr>
+            <tr><td>371.005-0</td><td>372.005-9</td></tr>
+            <tr><td>371.015-9</td><td>372.015-8</td></tr>
+            <tr><td>371.201-5</td><td>DB 180.001-0</td></tr>
+        </table>
+
+        <h3>Lokomotiva 371.201 – Gottlieb</h3>
+
+        <p>
+            Zvláštním zástupcem řady je lokomotiva
+            371.201, která původně patřila německým
+            železnicím a nesla označení 180.001.
+        </p>
+
+        <p>
+            Do vozidlového parku Českých drah se dostala
+            v souvislosti s kompenzací škod po nehodě
+            české lokomotivy 372.006 v Drážďanech.
+        </p>
+
+        <p class="technicka-poznamka">
+            Tabulka představuje historický seznam vozidel,
+            nikoliv jejich aktuální provozní stav.
+        </p>
+
+    </section>
+
+
+    <!-- PROVOZNÍ HISTORIE -->
+
+    <section class="card" id="provoz">
+
+        <h2>Provozní historie</h2>
+
+        <h3>Mezinárodní dálková doprava</h3>
+
+        <p>
+            Lokomotivy řady 371 jsou spojovány především
+            s dálkovou osobní dopravou mezi Českou
+            republikou a Německem.
+        </p>
+
+        <h3>Významné oblasti historického nasazení</h3>
+
+        <ul>
+            <li>Praha.</li>
+            <li>Ústí nad Labem.</li>
+            <li>Děčín.</li>
+            <li>Bad Schandau.</li>
+            <li>Drážďany.</li>
+            <li>Berlín.</li>
+        </ul>
+
+        <h3>Typické mezinárodní vozební rameno</h3>
+
+        <div class="energeticke-schema">
+            <div>Praha</div>
+            <span>↓</span>
+            <div>Ústí nad Labem</div>
+            <span>↓</span>
+            <div>Děčín</div>
+            <span>↓</span>
+            <div>Bad Schandau</div>
+            <span>↓</span>
+            <div>Drážďany</div>
+            <span>↓</span>
+            <div>Berlín</div>
+        </div>
+
+        <p>
+            Dvousystémová elektrická výzbroj umožňovala
+            překonání styku české a německé napájecí
+            soustavy bez výměny hnacího vozidla
+            z důvodu rozdílného elektrického napájení.
+        </p>
+
+        <h3>Druhy vlaků</h3>
+
+        <ul>
+            <li>EuroCity (EC).</li>
+            <li>Mezinárodní rychlíky.</li>
+            <li>Vnitrostátní dálkové vlaky.</li>
+            <li>Další výkony podle provozních potřeb.</li>
+        </ul>
+
+        <h3>Postupné nahrazování</h3>
+
+        <p>
+            S modernizací dálkové železniční dopravy
+            byly lokomotivy řady 371 postupně nahrazovány
+            výkonnějšími vícesystémovými vozidly
+            s moderní výkonovou elektronikou.
+        </p>
+
+    </section>
+
+
+    <!-- ÚDRŽBA -->
+
+    <section class="card" id="udrzba">
+
+        <h2>Údržba, opravy a životnost</h2>
+
+        <h3>Mechanická údržba</h3>
+
+        <ul>
+            <li>Kontrola profilu dvojkolí.</li>
+            <li>Kontrola opotřebení kol.</li>
+            <li>Kontrola nápravových ložisek.</li>
+            <li>Kontrola ozubených převodů.</li>
+            <li>Kontrola kloubových spojek.</li>
+            <li>Kontrola podvozkových rámů.</li>
+            <li>Kontrola hydraulických tlumičů.</li>
+            <li>Kontrola koroze skříně.</li>
+        </ul>
+
+        <h3>Elektrická údržba</h3>
+
+        <ul>
+            <li>Kontrola trakčních motorů.</li>
+            <li>Kontrola komutátorů a kartáčů.</li>
+            <li>Kontrola elektrické izolace.</li>
+            <li>Kontrola trakčního transformátoru.</li>
+            <li>Kontrola usměrňovačů.</li>
+            <li>Kontrola rozjezdových odporníků.</li>
+            <li>Kontrola brzdových odporníků.</li>
+            <li>Kontrola sběračů proudu.</li>
+            <li>Kontrola stykačů a vypínačů.</li>
+        </ul>
+
+        <h3>Pneumatická údržba</h3>
+
+        <ul>
+            <li>Kontrola kompresoru.</li>
+            <li>Kontrola těsnosti potrubí.</li>
+            <li>Kontrola vzduchojemů.</li>
+            <li>Kontrola brzdových válců.</li>
+            <li>Kontrola brzdových rozváděčů.</li>
+            <li>Kontrola mechanických částí brzdy.</li>
+        </ul>
+
+        <h3>Faktory ovlivňující další životnost</h3>
+
+        <ul>
+            <li>Únava konstrukčních materiálů.</li>
+            <li>Stárnutí elektrické izolace.</li>
+            <li>Dostupnost náhradních dílů.</li>
+            <li>Opotřebení trakčních motorů.</li>
+            <li>Náklady na rozsáhlejší opravy.</li>
+            <li>Požadavky moderních zabezpečovacích systémů.</li>
+            <li>Ekonomika provozu starších vozidel.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- VÝHODY A NEVÝHODY -->
+
+    <section class="card" id="vyhody">
+
+        <h2>Výhody a nevýhody</h2>
+
+        <table class="technicke-udaje">
+
+            <tr>
+                <th>Výhody</th>
+                <th>Nevýhody</th>
+            </tr>
+
+            <tr>
+                <td>Dvousystémový provoz</td>
+                <td>Absence soustavy 25 kV / 50 Hz</td>
+            </tr>
+
+            <tr>
+                <td>Maximální rychlost 160 km/h</td>
+                <td>Nižší rozjezdová síla oproti řadě 372</td>
+            </tr>
+
+            <tr>
+                <td>Elektrodynamická brzda</td>
+                <td>Bez rekuperace elektrické energie</td>
+            </tr>
+
+            <tr>
+                <td>Mezinárodní využití</td>
+                <td>Malý počet vyrobených a modernizovaných strojů</td>
+            </tr>
+
+            <tr>
+                <td>Klidný chod při vyšších rychlostech</td>
+                <td>Zastaralá odporová regulace</td>
+            </tr>
+
+            <tr>
+                <td>Všechny nápravy jsou hnací</td>
+                <td>Náročnější údržba komutátorových motorů</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- ZAJÍMAVOSTI -->
+
+    <section class="card" id="zajimavosti">
+
+        <h2>Zajímavosti o řadě 371</h2>
+
+        <ul>
+            <li>
+                Řada vznikla přestavbou původních
+                lokomotiv určených pro rychlost 120 km/h.
+            </li>
+
+            <li>
+                Maximální rychlost byla zvýšena
+                na 160 km/h bez zvýšení trvalého výkonu.
+            </li>
+
+            <li>
+                Historický park řady zahrnoval
+                pouze sedm lokomotiv.
+            </li>
+
+            <li>
+                Jeden stroj pochází z vozidlového
+                parku německých železnic.
+            </li>
+
+            <li>
+                Lokomotiva 371.002 dosáhla při zkouškách
+                rychlosti 178 km/h.
+            </li>
+
+            <li>
+                Lokomotiva využívá stejnosměrné motory
+                i při napájení ze střídavé soustavy.
+            </li>
+
+            <li>
+                Přezdívka Bastard je spojována
+                s konstrukčními a provozními vlastnostmi
+                původních lokomotiv.
+            </li>
+
+            <li>
+                Při rychlosti 160 km/h ujede lokomotiva
+                přibližně 44,4 metru za sekundu.
+            </li>
+
+            <li>
+                Trakční transformátor je umístěn
+                pod hlavním rámem mezi podvozky.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- FOTOGALERIE -->
+
+    <section class="card" id="fotografie">
+
+        <h2>Fotodokumentace</h2>
+
+        <figure>
+
+            <img src="images/371.jpg"
+                 alt="Lokomotiva řady 371 – celkový pohled"
+                 class="lokomotiva-img"
+                 loading="lazy">
+
+            <figcaption>
+                Celkový pohled na lokomotivu řady 371
+            </figcaption>
+
+        </figure>
+
+        <figure>
+
+            <img src="images/371-2.jpg"
+                 alt="Lokomotiva řady 371 v železničním provozu"
+                 class="lokomotiva-img"
+                 loading="lazy">
+
+            <figcaption>
+                Lokomotiva řady 371 v provozu
+            </figcaption>
+
+        </figure>
+
+        <a href="galerie.html" class="tlacitko">
+            Zobrazit celou fotogalerii
+        </a>
+
+    </section>
+
+
+    <!-- ZDROJE INFORMACÍ -->
+
+    <section class="card" id="zdroje">
+
+        <h2>Zdroje informací</h2>
+
+        <ul>
+
+            <li>
+                <a href="https://www.atlaslokomotiv.net/loko-372.html"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    AtlasLokomotiv.net – řady 372 a 371
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.atlasvozu.cz/rada/cd/187-371.html"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Atlas vozů – řada 371
+                </a>
+            </li>
+
+            <li>
+                <a href="https://zeleznicar.cd.cz/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Železničář – České dráhy
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.bluetrains.cz/galerie-vozidel/lokomotivy-2/elektricke-lokomotivy/rada-371/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Bluetrains – řada 371
+                </a>
+            </li>
+
+            <li>
+                <a href="https://kutiluv-zapisnik.cz/lokomotivy-rady-371-a-372/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Kutilův zápisník – lokomotivy 371 a 372
+                </a>
+            </li>
+
+        </ul>
+
+        <p>
+            Web má odborný encyklopedický a vzdělávací
+            charakter. Nenahrazuje originální výrobní,
+            servisní ani provozní dokumentaci.
+        </p>
+
+    </section>
+
+
+    <!-- POROVNÁNÍ -->
+
+    <section class="card">
+
+        <h2>Porovnání lokomotiv 242 a 371</h2>
+
+        <p>
+            Přestože obě lokomotivní řady pocházejí
+            z produkce podniku Škoda Plzeň,
+            výrazně se liší elektrickou výzbrojí,
+            napájecími soustavami, brzdovými systémy
+            a konstrukčním určením.
+        </p>
+
+        <a href="lokomotiva-242.html" class="tlacitko">
+            Lokomotiva řady 242
+        </a>
+
+        <a href="porovnani.html" class="tlacitko">
+            Zobrazit technické porovnání
+        </a>
+
+    </section>
+
 </main>
 
 <footer>
-    <p>Školní projekt – Lokomotivy 242 a 371</p>
+
+    <p>© 2026 Atlas lokomotiv</p>
+
+    <p>Historie • Technika • Železnice</p>
+
+    <p>
+        Specializovaný atlas elektrických lokomotiv
+        řad 242 a 371
+    </p>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

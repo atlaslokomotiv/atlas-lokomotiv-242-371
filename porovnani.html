@@ -1,165 +1,1372 @@
+
 <!DOCTYPE html>
 <html lang="cs">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porovnání lokomotiv 242 a 371</title>
+
+    <meta name="description" content="Podrobné technické porovnání elektrických lokomotiv řad 242 Plecháč a 371 Bastard. Výkon, rychlost, tažná síla, konstrukce a elektrická výzbroj.">
+
+    <title>Porovnání lokomotiv 242 a 371 | Atlas lokomotiv</title>
+
     <link rel="stylesheet" href="styly.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Porovnání lokomotiv</h1>
-        <p>Elektrické lokomotivy řady 242 a 371</p>
-    </header>
+<header>
+    <h1>Porovnání lokomotiv 242 a 371</h1>
+    <p>Plecháč versus Bastard | Technika, konstrukce a provoz</p>
+</header>
 
-    <nav>
-        <a href="index.html">Úvod</a>
-        <a href="lokomotiva-242.html">Řada 242</a>
-        <a href="lokomotiva-371.html">Řada 371</a>
-        <a href="porovnani.html">Porovnání</a>
-        <a href="galerie.html">Fotogalerie</a>
-    </nav>
+<nav>
+    <a href="index.html">Úvod</a>
+    <a href="lokomotiva-242.html">Lokomotiva 242</a>
+    <a href="lokomotiva-371.html">Lokomotiva 371</a>
+    <a href="porovnani.html" aria-current="page">Porovnání</a>
+    <a href="galerie.html">Fotogalerie</a>
+    <a href="evidence.html">Evidence lokomotiv</a>
+    <button id="theme-toggle" type="button">
+        🌙 Tmavý režim
+    </button>
+</nav>
 
-    <main>
-        <section class="card">
-            <h2>Fotografie lokomotiv</h2>
+<main>
 
-            <div class="porovnani-foto">
-                <div>
-                    <h3>Lokomotiva 242</h3>
-                    <img src="images/242.jpg" alt="Lokomotiva 242">
+    <!-- ÚVOD -->
+
+    <section class="card">
+
+        <h2>Plecháč versus Bastard</h2>
+
+        <div class="porovnani-foto">
+
+            <div>
+                <h3>Řada 242 – Plecháč</h3>
+
+                <img src="images/242.jpg"
+                     alt="Elektrická lokomotiva řady 242"
+                     class="lokomotiva-img">
+
+                <p>Jednosystémová střídavá lokomotiva</p>
+
+                <a href="lokomotiva-242.html" class="tlacitko">
+                    Detail lokomotivy
+                </a>
+            </div>
+
+            <div>
+                <h3>Řada 371 – Bastard</h3>
+
+                <img src="images/371.jpg"
+                     alt="Elektrická lokomotiva řady 371"
+                     class="lokomotiva-img">
+
+                <p>Dvousystémová rychlíková lokomotiva</p>
+
+                <a href="lokomotiva-371.html" class="tlacitko">
+                    Detail lokomotivy
+                </a>
+            </div>
+
+        </div>
+
+        <p>
+            Obě lokomotivní řady pocházejí z produkce
+            podniku Škoda Plzeň. Přestože mají shodný
+            uváděný trvalý výkon a stejnou hmotnost,
+            vykazují výrazné rozdíly v konstrukci,
+            elektrické výzbroji, rychlosti a provozním určení.
+        </p>
+
+    </section>
+
+
+    <!-- OBSAH -->
+
+    <section class="card">
+
+        <h2>Obsah porovnání</h2>
+
+        <ul>
+            <li><a href="#historie">Výroba a historie</a></li>
+            <li><a href="#rozmery">Rozměrové parametry</a></li>
+            <li><a href="#hmotnost">Hmotnostní parametry</a></li>
+            <li><a href="#vykon">Výkonové parametry</a></li>
+            <li><a href="#napajeni">Napájecí soustavy</a></li>
+            <li><a href="#regulace">Regulace výkonu</a></li>
+            <li><a href="#motory">Trakční motory</a></li>
+            <li><a href="#mechanika">Mechanická konstrukce</a></li>
+            <li><a href="#brzdy">Brzdové systémy</a></li>
+            <li><a href="#grafy">Grafické porovnání</a></li>
+            <li><a href="#charakteristika">Trakční charakteristika</a></li>
+            <li><a href="#kalkulacka">Trakční kalkulačka</a></li>
+            <li><a href="#energie">Energetické hledisko</a></li>
+            <li><a href="#provoz">Provozní využití</a></li>
+            <li><a href="#udrzba">Údržba a životnost</a></li>
+            <li><a href="#vyhody">Výhody a nevýhody</a></li>
+            <li><a href="#zaver">Celkové zhodnocení</a></li>
+            <li><a href="#zdroje">Použité zdroje</a></li>
+        </ul>
+
+    </section>
+
+
+    <!-- HISTORIE -->
+
+    <section class="card" id="historie">
+
+        <h2>1. Výroba a historie</h2>
+
+        <div class="tabulka-scroll">
+            <table class="technicke-udaje srovnavaci-tabulka">
+
+                <tr>
+                    <th>Parametr</th>
+                    <th>Řada 242</th>
+                    <th>Řada 371</th>
+                </tr>
+
+                <tr>
+                    <td>Přezdívka</td>
+                    <td>Plecháč</td>
+                    <td>Bastard</td>
+                </tr>
+
+                <tr>
+                    <td>Výrobce původních vozidel</td>
+                    <td>Škoda Plzeň</td>
+                    <td>Škoda Plzeň</td>
+                </tr>
+
+                <tr>
+                    <td>Výroba původních vozidel</td>
+                    <td>1975–1981</td>
+                    <td>1988–1991</td>
+                </tr>
+
+                <tr>
+                    <td>Počet vozidel dané řady</td>
+                    <td>86 pro ČSD</td>
+                    <td>7 po rekonstrukcích</td>
+                </tr>
+
+                <tr>
+                    <td>Původní označení nebo výchozí řada</td>
+                    <td>S 499.02</td>
+                    <td>372 / 180</td>
+                </tr>
+
+                <tr>
+                    <td>Konstrukční předchůdce</td>
+                    <td>Řada 240</td>
+                    <td>Řada 372</td>
+                </tr>
+
+                <tr>
+                    <td>Tovární typ původní konstrukce</td>
+                    <td>73 E</td>
+                    <td>76 E / 80 E</td>
+                </tr>
+
+                <tr>
+                    <td>Typ lokomotivy</td>
+                    <td>Univerzální</td>
+                    <td>Rychlíková</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <p>
+            Řada 242 vznikla jako pokračování vývoje
+            střídavých lokomotiv. Řada 371 vznikla
+            rekonstrukcí dvousystémových lokomotiv
+            pro rychlost 160 km/h.
+        </p>
+
+    </section>
+
+
+    <!-- ROZMĚRY -->
+
+    <section class="card" id="rozmery">
+
+        <h2>2. Rozměrové parametry</h2>
+
+        <div class="tabulka-scroll">
+            <table class="technicke-udaje srovnavaci-tabulka">
+
+                <tr><th>Parametr</th><th>242</th><th>371</th></tr>
+                <tr><td>Délka přes nárazníky</td><td>16 440 mm</td><td>16 800 mm</td></tr>
+                <tr><td>Délka skříně</td><td>15 200 mm</td><td>15 500 mm</td></tr>
+                <tr><td>Šířka</td><td>2 940 mm</td><td>2 990 mm</td></tr>
+                <tr><td>Výška se staženými sběrači</td><td>4 650 mm</td><td>4 627 mm</td></tr>
+                <tr><td>Rozchod koleje</td><td>1 435 mm</td><td>1 435 mm</td></tr>
+                <tr><td>Rozvor podvozku</td><td>2 800 mm</td><td>3 200 mm</td></tr>
+                <tr><td>Vzdálenost otočných čepů</td><td>7 800 mm</td><td>8 300 mm</td></tr>
+                <tr><td>Celkový rozvor (odvozený)</td><td>10 600 mm</td><td>11 500 mm</td></tr>
+                <tr><td>Průměr nových kol</td><td>1 250 mm</td><td>1 250 mm</td></tr>
+                <tr><td>Průměr opotřebených kol</td><td>1 180 mm</td><td>1 180 mm</td></tr>
+                <tr><td>Minimální poloměr oblouku</td><td>120 m</td><td>120 m</td></tr>
+
+            </table>
+        </div>
+
+        <h3>Rozdíly v rozměrech</h3>
+
+        <ul>
+            <li>Řada 371 je delší o 360 mm.</li>
+            <li>Řada 371 je širší o 50 mm.</li>
+            <li>Řada 242 je vyšší o 23 mm.</li>
+            <li>Řada 371 má rozvor podvozku delší o 400 mm.</li>
+            <li>Vzdálenost otočných čepů je u řady 371 větší o 500 mm.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- HMOTNOST -->
+
+    <section class="card" id="hmotnost">
+
+        <h2>3. Hmotnostní parametry</h2>
+
+        <div class="tabulka-scroll">
+            <table class="technicke-udaje srovnavaci-tabulka">
+
+                <tr><th>Parametr</th><th>242</th><th>371</th></tr>
+                <tr><td>Služební hmotnost</td><td>84 t</td><td>84 t</td></tr>
+                <tr><td>Adhezní hmotnost</td><td>84 t</td><td>84 t</td></tr>
+                <tr><td>Počet náprav</td><td>4</td><td>4</td></tr>
+                <tr><td>Počet hnacích náprav</td><td>4</td><td>4</td></tr>
+                <tr><td>Průměrná hmotnost na nápravu</td><td>21 t</td><td>21 t</td></tr>
+                <tr><td>Měrný výkon (výpočet)</td><td>36,67 kW/t</td><td>36,67 kW/t</td></tr>
+                <tr><td>Specifická hmotnost (výpočet)</td><td>27,3 kg/kW</td><td>27,3 kg/kW</td></tr>
+
+            </table>
+        </div>
+
+        <p>
+            Obě lokomotivy mají srovnatelnou služební
+            hmotnost i poměr výkonu k hmotnosti.
+            Jejich rozdílné trakční vlastnosti souvisejí
+            zejména s převodem a elektrickou výzbrojí.
+        </p>
+
+    </section>
+
+
+    <!-- VÝKON -->
+
+    <section class="card" id="vykon">
+
+        <h2>4. Výkonové a trakční parametry</h2>
+
+        <div class="tabulka-scroll">
+            <table class="technicke-udaje srovnavaci-tabulka">
+
+                <tr><th>Parametr</th><th>242</th><th>371</th></tr>
+                <tr><td>Trvalý výkon</td><td>3 080 kW</td><td>3 080 kW</td></tr>
+                <tr><td>Maximální rychlost</td><td>120 km/h</td><td>160 km/h</td></tr>
+                <tr><td>Maximální tažná síla</td><td>240 kN</td><td>205 kN</td></tr>
+                <tr><td>Trvalá tažná síla</td><td>173 kN</td><td>102 kN</td></tr>
+                <tr><td>Uváděná trvalá rychlost</td><td>64 km/h</td><td>103 km/h</td></tr>
+                <tr><td>Nápravový převod</td><td>1 : 3,2</td><td>1 : 2,62</td></tr>
+                <tr><td>Výkon elektrodynamické brzdy</td><td>Bez EDB</td><td>2 200 kW</td></tr>
+                <tr><td>Maximální rychlost v m/s</td><td>33,33 m/s</td><td>44,44 m/s</td></tr>
+                <tr><td>Průměrná maximální síla na nápravu</td><td>60 kN</td><td>51,25 kN</td></tr>
+
+            </table>
+        </div>
+
+        <h3>Rozdíl v trakčních vlastnostech</h3>
+
+        <p>
+            Řada 242 má vyšší maximální tažnou sílu.
+            Řada 371 má převod přizpůsobený vyšší
+            rychlosti, což odpovídá jejímu určení
+            pro dálkovou osobní dopravu.
+        </p>
+
+        <p class="technicka-poznamka">
+            Publikované hodnoty výkonu, trvalé rychlosti
+            a tažné síly nemusejí představovat totožný
+            pracovní bod. Proto jsou teoretické výpočty
+            v dalších částech uvedeny samostatně.
+        </p>
+
+    </section>
+
+
+    <!-- NAPÁJENÍ -->
+
+    <section class="card" id="napajeni">
+
+        <h2>5. Napájecí soustavy</h2>
+
+        <div class="tabulka-scroll">
+            <table class="technicke-udaje srovnavaci-tabulka">
+
+                <tr><th>Parametr</th><th>242</th><th>371</th></tr>
+                <tr><td>Počet napájecích soustav</td><td>1</td><td>2</td></tr>
+                <tr><td>3 kV DC</td><td>Ne</td><td>Ano</td></tr>
+                <tr><td>15 kV AC, 16,7 Hz</td><td>Ne</td><td>Ano</td></tr>
+                <tr><td>25 kV AC, 50 Hz</td><td>Ano</td><td>Ne</td></tr>
+                <tr><td>Trakční transformátor</td><td>Ano</td><td>Ano</td></tr>
+                <tr><td>Trakční usměrňovače</td><td>Ano</td><td>Ano</td></tr>
+                <tr><td>Počet sběračů</td><td>2</td><td>2</td></tr>
+                <tr><td>Typ trakčních motorů</td><td>Stejnosměrné</td><td>Stejnosměrné</td></tr>
+
+            </table>
+        </div>
+
+        <h3>Řada 242</h3>
+
+        <p>
+            Je určena pro tratě elektrizované
+            střídavou napájecí soustavou 25 kV, 50 Hz.
+        </p>
+
+        <h3>Řada 371</h3>
+
+        <p>
+            Umožňuje provoz na české stejnosměrné
+            soustavě 3 kV a německé střídavé soustavě
+            15 kV, 16,7 Hz. Tato kombinace byla
+            významná pro přeshraniční železniční dopravu.
+        </p>
+
+    </section>
+
+
+    <!-- REGULACE -->
+
+    <section class="card" id="regulace">
+
+        <h2>6. Regulace výkonu</h2>
+
+        <div class="tabulka-scroll">
+            <table class="technicke-udaje srovnavaci-tabulka">
+
+                <tr><th>Parametr</th><th>242</th><th>371</th></tr>
+                <tr><td>Princip regulace</td><td>Přepínání odboček</td><td>Odporová regulace</td></tr>
+                <tr><td>Regulace výkonu po stupních</td><td>Ano</td><td>Ano</td></tr>
+                <tr><td>Rozjezdové odporníky jako hlavní regulační princip</td><td>Ne</td><td>Ano</td></tr>
+                <tr><td>Zeslabování buzení motorů</td><td>Ano</td><td>Ano</td></tr>
+                <tr><td>Pulzní trakční regulace</td><td>Ne</td><td>Ne</td></tr>
+                <tr><td>Asynchronní trakční pohon</td><td>Ne</td><td>Ne</td></tr>
+
+            </table>
+        </div>
+
+        <div class="porovnani-foto">
+
+            <div>
+
+                <h3>Tok energie – 242</h3>
+
+                <div class="energeticke-schema">
+                    <div>Trolej 25 kV AC</div>
+                    <span>↓</span>
+                    <div>Regulace odbočkami</div>
+                    <span>↓</span>
+                    <div>Transformátor</div>
+                    <span>↓</span>
+                    <div>Usměrňovače</div>
+                    <span>↓</span>
+                    <div>Trakční motory</div>
+                    <span>↓</span>
+                    <div>Hnací dvojkolí</div>
                 </div>
 
-                <div>
-                    <h3>Lokomotiva 371</h3>
-                    <img src="images/371.jpg" alt="Lokomotiva 371">
+            </div>
+
+            <div>
+
+                <h3>Tok energie – 371 na 15 kV</h3>
+
+                <div class="energeticke-schema">
+                    <div>Trolej 15 kV AC</div>
+                    <span>↓</span>
+                    <div>Transformátor</div>
+                    <span>↓</span>
+                    <div>Usměrňovače</div>
+                    <span>↓</span>
+                    <div>Odporová regulace</div>
+                    <span>↓</span>
+                    <div>Trakční motory</div>
+                    <span>↓</span>
+                    <div>Hnací dvojkolí</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="technicka-poznamka">
+            Schémata představují zjednodušené funkční
+            znázornění, nikoliv skutečná elektrická
+            zapojení lokomotiv.
+        </p>
+
+    </section>
+
+
+    <!-- MOTORY -->
+
+    <section class="card" id="motory">
+
+        <h2>7. Trakční motory</h2>
+
+        <div class="tabulka-scroll">
+            <table class="technicke-udaje srovnavaci-tabulka">
+
+                <tr><th>Parametr</th><th>242</th><th>371</th></tr>
+                <tr><td>Typ trakčního motoru</td><td>9 AL 4446 iP</td><td>AL 4542 FnT</td></tr>
+                <tr><td>Počet motorů</td><td>4</td><td>4</td></tr>
+                <tr><td>Druh motoru</td><td>Stejnosměrný sériový</td><td>Stejnosměrný sériový</td></tr>
+                <tr><td>Jmenovité napětí</td><td>750 V</td><td>1 500 V</td></tr>
+                <tr><td>Trvalý proud</td><td>1 100 A</td><td>550 A</td></tr>
+                <tr><td>Uváděný hodinový proud</td><td>1 140 A</td><td>770 A</td></tr>
+                <tr><td>Chlazení</td><td>Cizí ventilace</td><td>Cizí ventilace</td></tr>
+                <tr><td>Komutátor</td><td>Ano</td><td>Ano</td></tr>
+                <tr><td>Uhlíkové kartáče</td><td>Ano</td><td>Ano</td></tr>
+                <tr><td>Převod motoru na dvojkolí</td><td>1 : 3,2</td><td>1 : 2,62</td></tr>
+
+            </table>
+        </div>
+
+        <p>
+            Obě řady využívají stejnosměrné komutátorové
+            motory. Liší se jejich konstrukčním provedením,
+            provozním napětím, proudem a nápravovým převodem.
+        </p>
+
+    </section>
+
+
+    <!-- MECHANICKÁ ČÁST -->
+
+    <section class="card" id="mechanika">
+
+        <h2>8. Mechanická konstrukce</h2>
+
+        <div class="tabulka-scroll">
+            <table class="technicke-udaje srovnavaci-tabulka">
+
+                <tr><th>Parametr</th><th>242</th><th>371</th></tr>
+                <tr><td>Materiál skříně</td><td>Ocel</td><td>Ocel</td></tr>
+                <tr><td>Uspořádání pojezdu</td><td>Bo'Bo'</td><td>Bo'Bo'</td></tr>
+                <tr><td>Počet podvozků</td><td>2</td><td>2</td></tr>
+                <tr><td>Počet náprav v podvozku</td><td>2</td><td>2</td></tr>
+                <tr><td>Počet hnacích dvojkolí</td><td>4</td><td>4</td></tr>
+                <tr><td>Počet kol</td><td>8</td><td>8</td></tr>
+                <tr><td>Počet stanovišť</td><td>2</td><td>2</td></tr>
+                <tr><td>Stupně vypružení</td><td>2</td><td>2</td></tr>
+                <tr><td>Přenos výkonu</td><td>Mechanický převod</td><td>Mechanický převod</td></tr>
+                <tr><td>Konstrukční zaměření</td><td>Univerzální provoz</td><td>Vyšší rychlosti</td></tr>
+
+            </table>
+        </div>
+
+        <h3>Význam uspořádání Bo'Bo'</h3>
+
+        <p>
+            Obě lokomotivy mají dva dvounápravové
+            podvozky, přičemž každé dvojkolí
+            je poháněno samostatným trakčním motorem.
+        </p>
+
+    </section>
+
+
+    <!-- BRZDY -->
+
+    <section class="card" id="brzdy">
+
+        <h2>9. Brzdové systémy</h2>
+
+        <div class="tabulka-scroll">
+            <table class="technicke-udaje srovnavaci-tabulka">
+
+                <tr><th>Parametr</th><th>242</th><th>371</th></tr>
+                <tr><td>Samočinná tlaková brzda</td><td>Ano</td><td>Ano</td></tr>
+                <tr><td>Přímočinná brzda</td><td>Ano</td><td>Ano</td></tr>
+                <tr><td>Ruční brzda</td><td>Ano</td><td>Ano</td></tr>
+                <tr><td>Mechanická brzda</td><td>Špalíková</td><td>Špalíková</td></tr>
+                <tr><td>Elektrodynamická brzda</td><td>Ne</td><td>Ano</td></tr>
+                <tr><td>Výkon EDB</td><td>—</td><td>2 200 kW</td></tr>
+                <tr><td>Rekuperační brzdění</td><td>Ne</td><td>Ne</td></tr>
+
+            </table>
+        </div>
+
+        <h3>Význam elektrodynamické brzdy</h3>
+
+        <p>
+            Řada 371 umožňuje využívat trakční motory
+            při brzdění jako generátory. Elektrická
+            energie je přeměňována na teplo
+            v brzdových odpornících.
+        </p>
+
+        <p>
+            Tím lze za vhodných podmínek omezit
+            opotřebení mechanických brzd a tepelné
+            namáhání jízdních ploch kol.
+        </p>
+
+    </section>
+
+
+    <!-- GRAFY -->
+
+    <section class="card" id="grafy">
+
+        <h2>10. Grafické porovnání</h2>
+
+        <h3>Maximální rychlost</h3>
+
+        <div class="porovnani-graf">
+
+            <div class="graf-popis">242 – 120 km/h</div>
+            <div class="graf-draha">
+                <div class="graf-sloupec rada242" style="width:75%">
+                    120 km/h
                 </div>
             </div>
-        </section>
 
-        <section class="card">
-            <h2>Technické porovnání</h2>
-
-            <div class="tabulka-obal">
-                <table class="technicke-udaje">
-                    <tr>
-                        <th>Parametr</th>
-                        <th>Řada 242</th>
-                        <th>Řada 371</th>
-                    </tr>
-                    <tr>
-                        <td>Výrobce</td>
-                        <td>Škoda Plzeň</td>
-                        <td>Škoda Plzeň</td>
-                    </tr>
-                    <tr>
-                        <td>Napájení</td>
-                        <td>25 kV, 50 Hz AC</td>
-                        <td>3 kV DC / 15 kV AC</td>
-                    </tr>
-                    <tr>
-                        <td>Maximální rychlost</td>
-                        <td>120 km/h</td>
-                        <td>160 km/h</td>
-                    </tr>
-                    <tr>
-                        <td>Trvalý výkon</td>
-                        <td>3 080 kW</td>
-                        <td>3 080 kW</td>
-                    </tr>
-                    <tr>
-                        <td>Pojezd</td>
-                        <td>Bo'Bo'</td>
-                        <td>Bo'Bo'</td>
-                    </tr>
-                    <tr>
-                        <td>Hmotnost</td>
-                        <td>86 t</td>
-                        <td>Přibližně 84 t</td>
-                    </tr>
-                    <tr>
-                        <td>Typické využití</td>
-                        <td>Osobní doprava</td>
-                        <td>Mezinárodní doprava</td>
-                    </tr>
-
-                    <tr>
-                        <td>Uspořádání náprav</td>
-                        <td>Bo'Bo'</td>
-                        <td>Bo'Bo'</td>
-                    </tr>
-
-                    <tr>
-                        <td>Původní označení</td>
-                        <td>S 499.02</td>
-                        <td>Vznikla modernizací řady 372</td>
-                    </tr>
-
-                </table>
+            <div class="graf-popis">371 – 160 km/h</div>
+            <div class="graf-draha">
+                <div class="graf-sloupec rada371" style="width:100%">
+                    160 km/h
+                </div>
             </div>
-        </section>
+
+        </div>
+
+        <h3>Trvalý výkon</h3>
+
+        <div class="porovnani-graf">
+
+            <div class="graf-popis">242</div>
+            <div class="graf-draha">
+                <div class="graf-sloupec rada242" style="width:100%">
+                    3 080 kW
+                </div>
+            </div>
+
+            <div class="graf-popis">371</div>
+            <div class="graf-draha">
+                <div class="graf-sloupec rada371" style="width:100%">
+                    3 080 kW
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Maximální tažná síla</h3>
+
+        <div class="porovnani-graf">
+
+            <div class="graf-popis">242</div>
+            <div class="graf-draha">
+                <div class="graf-sloupec rada242" style="width:100%">
+                    240 kN
+                </div>
+            </div>
+
+            <div class="graf-popis">371</div>
+            <div class="graf-draha">
+                <div class="graf-sloupec rada371" style="width:85.42%">
+                    205 kN
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Trvalá tažná síla</h3>
+
+        <div class="porovnani-graf">
+
+            <div class="graf-popis">242</div>
+            <div class="graf-draha">
+                <div class="graf-sloupec rada242" style="width:100%">
+                    173 kN
+                </div>
+            </div>
+
+            <div class="graf-popis">371</div>
+            <div class="graf-draha">
+                <div class="graf-sloupec rada371" style="width:58.96%">
+                    102 kN
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Služební hmotnost</h3>
+
+        <div class="porovnani-graf">
+
+            <div class="graf-popis">242</div>
+            <div class="graf-draha">
+                <div class="graf-sloupec rada242" style="width:100%">
+                    84 t
+                </div>
+            </div>
+
+            <div class="graf-popis">371</div>
+            <div class="graf-draha">
+                <div class="graf-sloupec rada371" style="width:100%">
+                    84 t
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Délka přes nárazníky</h3>
+
+        <div class="porovnani-graf">
+
+            <div class="graf-popis">242</div>
+            <div class="graf-draha">
+                <div class="graf-sloupec rada242" style="width:97.86%">
+                    16,44 m
+                </div>
+            </div>
+
+            <div class="graf-popis">371</div>
+            <div class="graf-draha">
+                <div class="graf-sloupec rada371" style="width:100%">
+                    16,80 m
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 
 
-<section class="card">
-    <h2>Hlavní rozdíly mezi řadami 242 a 371</h2>
+    <!-- TRAKČNÍ CHARAKTERISTIKA -->
 
-    <h3>Lokomotiva řady 242</h3>
-    <p>
-        Lokomotiva řady 242 byla určena
-        především pro vnitrostátní osobní
-        železniční dopravu.
-        Je konstruována pro střídavou
-        napájecí soustavu 25 kV, 50 Hz
-        a dosahuje rychlosti 120 km/h.
-    </p>
+    <section class="card" id="charakteristika">
 
-    <h3>Lokomotiva řady 371</h3>
-    <p>
-        Lokomotiva řady 371 je dvousystémová
-        a umožňuje provoz pod stejnosměrnou
-        i střídavou napájecí soustavou.
-        Díky maximální rychlosti 160 km/h
-        byla využívána také v mezinárodní
-        osobní železniční dopravě.
-    </p>
+        <h2>11. Porovnání trakčních charakteristik</h2>
 
-    <h3>Shrnutí</h3>
-    <p>
-        Hlavním rozdílem je napájecí
-        soustava a maximální rychlost.
-        Řada 242 je jednosystémová,
-        zatímco řada 371 umožňuje provoz
-        na dvou napájecích soustavách.
-    </p>
-</section>
+        <p>
+            Teoretická tažná síla je vypočtena
+            z mechanického výkonu a rychlosti.
+            Model současně omezuje sílu na publikované
+            maximum každé lokomotivy.
+        </p>
 
-<section class="card">
-    <h2>Použité zdroje</h2>
-    <ul>
-        <li>
-            <a href="https://www.atlaslokomotiv.net/"
-               target="_blank" rel="noopener noreferrer">
-                Atlas lokomotiv
-            </a>
-        </li>
-        <li>
-            <a href="https://www.cd.cz/"
-               target="_blank" rel="noopener noreferrer">
-                České dráhy
-            </a>
-        </li>
-    </ul>
-</section>
+        <p class="technicky-vzorec">
+            F = P / v
+        </p>
 
-    </main>
+        <div class="tabulka-scroll">
+            <table class="technicke-udaje srovnavaci-tabulka">
 
-    <footer>
-        <p>Školní projekt – Lokomotivy 242 a 371</p>
-    </footer>
+                <tr>
+                    <th>Rychlost</th>
+                    <th>Řada 242</th>
+                    <th>Řada 371</th>
+                </tr>
+
+                <tr><td>20 km/h</td><td>240 kN</td><td>205 kN</td></tr>
+                <tr><td>40 km/h</td><td>240 kN</td><td>205 kN</td></tr>
+                <tr><td>60 km/h</td><td>184,8 kN</td><td>184,8 kN</td></tr>
+                <tr><td>80 km/h</td><td>138,6 kN</td><td>138,6 kN</td></tr>
+                <tr><td>100 km/h</td><td>110,9 kN</td><td>110,9 kN</td></tr>
+                <tr><td>120 km/h</td><td>92,4 kN</td><td>92,4 kN</td></tr>
+                <tr><td>140 km/h</td><td>Mimo rozsah</td><td>79,2 kN</td></tr>
+                <tr><td>160 km/h</td><td>Mimo rozsah</td><td>69,3 kN</td></tr>
+
+            </table>
+        </div>
+
+        <svg id="trakcni-graf"
+             viewBox="0 0 640 380"
+             role="img"
+             aria-label="Porovnání teoretické tažné síly obou lokomotiv">
+
+            <rect width="640" height="380"
+                  rx="12" fill="#f1f5f9"/>
+
+            <g id="trakcni-mrizka"></g>
+            <g id="trakcni-osy"></g>
+
+            <path id="krivka242"
+                  fill="none"
+                  stroke="#2563eb"
+                  stroke-width="4"/>
+
+            <path id="krivka371"
+                  fill="none"
+                  stroke="#dc2626"
+                  stroke-width="4"
+                  stroke-dasharray="9 5"/>
+
+        </svg>
+
+        <div class="graf-legenda">
+            <span style="color:#2563eb">━ Řada 242</span>
+            <span style="color:#dc2626">┅ Řada 371</span>
+        </div>
+
+        <p class="technicka-poznamka">
+            Jedná se pouze o idealizovanou výkonovou
+            charakteristiku, nikoliv skutečné měření.
+            Model nezohledňuje všechny proudové,
+            tepelné, adhezní a mechanické limity
+            konkrétního vozidla.
+        </p>
+
+    </section>
+
+
+    <!-- KALKULAČKA -->
+
+    <section class="card" id="kalkulacka">
+
+        <h2>12. Interaktivní trakční kalkulačka</h2>
+
+        <p>
+            Vyberte lokomotivu a rychlost.
+            Kalkulačka zobrazí modelovou tažnou sílu,
+            otáčky dvojkolí a kinetickou energii vozidla.
+        </p>
+
+        <div class="trakcni-kalkulacka">
+
+            <label for="volba-lokomotivy">
+                Vyberte lokomotivu:
+            </label>
+
+            <select id="volba-lokomotivy">
+                <option value="242">Řada 242 – Plecháč</option>
+                <option value="371">Řada 371 – Bastard</option>
+            </select>
+
+            <label for="rychlost-vstup">
+                Rychlost:
+                <strong id="rychlost-hodnota">60 km/h</strong>
+            </label>
+
+            <input type="range"
+                   id="rychlost-vstup"
+                   min="0"
+                   max="120"
+                   value="60"
+                   step="1">
+
+            <div class="vysledky-kalkulacky" aria-live="polite">
+
+                <div class="vysledek-box">
+                    <span id="vysledek-sila">184,8 kN</span>
+                    <p>Teoretická tažná síla</p>
+                </div>
+
+                <div class="vysledek-box">
+                    <span id="vysledek-rychlost">16,67 m/s</span>
+                    <p>Rychlost v metrech za sekundu</p>
+                </div>
+
+                <div class="vysledek-box">
+                    <span id="vysledek-otacky">255 ot/min</span>
+                    <p>Otáčky nového dvojkolí</p>
+                </div>
+
+                <div class="vysledek-box">
+                    <span id="vysledek-motor">815 ot/min</span>
+                    <p>Otáčky trakčního motoru</p>
+                </div>
+
+                <div class="vysledek-box">
+                    <span id="vysledek-energie">11,67 MJ</span>
+                    <p>Kinetická energie lokomotivy</p>
+                </div>
+
+                <div class="vysledek-box">
+                    <span id="vysledek-kwh">3,24 kWh</span>
+                    <p>Kinetická energie v kWh</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <h3>Použité fyzikální vztahy</h3>
+
+        <p class="technicky-vzorec">F = P / v</p>
+        <p class="technicky-vzorec">E = ½ × m × v²</p>
+        <p class="technicky-vzorec">n = 60 × v / (π × d)</p>
+
+        <p>
+            Výpočty vycházejí z hmotnosti 84 000 kg,
+            výkonu 3 080 kW a průměru nového kola 1,25 m.
+            Výsledky jsou teoretické a nejsou určeny
+            pro skutečné provozní výpočty.
+        </p>
+
+        <noscript>
+            Pro použití kalkulačky je nutné povolit JavaScript.
+        </noscript>
+
+    </section>
+
+
+    <!-- ENERGETIKA -->
+
+    <section class="card" id="energie">
+
+        <h2>13. Energetické hledisko</h2>
+
+        <h3>Řada 242</h3>
+
+        <p>
+            Regulací na transformátoru lze měnit
+            napájecí napětí trakčních motorů
+            bez použití rozjezdových odporníků
+            jako hlavního regulačního zařízení.
+        </p>
+
+        <h3>Řada 371</h3>
+
+        <p>
+            Při odporové regulaci vznikají tepelné
+            ztráty v rozjezdových odpornících.
+            Také elektrodynamické brzdění
+            přeměňuje energii na odpadní teplo.
+        </p>
+
+        <h3>Kinetická energie při maximální rychlosti</h3>
+
+        <div class="tabulka-scroll">
+            <table class="technicke-udaje srovnavaci-tabulka">
+
+                <tr><th>Parametr</th><th>242</th><th>371</th></tr>
+                <tr><td>Hmotnost lokomotivy</td><td>84 000 kg</td><td>84 000 kg</td></tr>
+                <tr><td>Maximální rychlost</td><td>120 km/h</td><td>160 km/h</td></tr>
+                <tr><td>Kinetická energie</td><td>46,67 MJ</td><td>82,96 MJ</td></tr>
+                <tr><td>Kinetická energie v kWh</td><td>12,96 kWh</td><td>23,05 kWh</td></tr>
+
+            </table>
+        </div>
+
+        <p>
+            Při své maximální rychlosti má samotná
+            lokomotiva řady 371 přibližně o 77,8 %
+            vyšší translační kinetickou energii
+            než řada 242 při její maximální rychlosti.
+        </p>
+
+        <p class="technicka-poznamka">
+            Kinetická energie není totožná se spotřebou
+            elektrické energie. Výpočet nezahrnuje
+            připojené vozy, rotující části, jízdní odpory
+            ani energetické ztráty.
+            Bez měření nelze určit přesnou účinnost
+            nebo skutečnou spotřebu obou lokomotiv.
+        </p>
+
+    </section>
+
+
+    <!-- PROVOZ -->
+
+    <section class="card" id="provoz">
+
+        <h2>14. Provozní využití</h2>
+
+        <div class="tabulka-scroll">
+            <table class="technicke-udaje srovnavaci-tabulka">
+
+                <tr><th>Oblast</th><th>242</th><th>371</th></tr>
+                <tr><td>Hlavní historické využití</td><td>Univerzální doprava</td><td>Dálková osobní doprava</td></tr>
+                <tr><td>Osobní vlaky</td><td>Typické využití</td><td>Možné využití</td></tr>
+                <tr><td>Rychlíky</td><td>Ano</td><td>Ano</td></tr>
+                <tr><td>Mezinárodní EuroCity</td><td>Není typické</td><td>Typické historické využití</td></tr>
+                <tr><td>Provoz v západních Čechách</td><td>Historicky významný</td><td>Závisí na napájení tratě</td></tr>
+                <tr><td>Provoz na jižní Moravě</td><td>Historicky významný</td><td>Omezen napájecí soustavou</td></tr>
+                <tr><td>Přeshraniční provoz do Německa</td><td>Nepodporuje německou soustavu</td><td>Konstrukčně určen</td></tr>
+
+            </table>
+        </div>
+
+        <h3>Typická historická oblast řady 242</h3>
+
+        <ul>
+            <li>Plzeňsko.</li>
+            <li>Jižní Čechy.</li>
+            <li>Vysočina.</li>
+            <li>Jižní Morava.</li>
+        </ul>
+
+        <h3>Typická historická oblast řady 371</h3>
+
+        <ul>
+            <li>Praha.</li>
+            <li>Ústí nad Labem.</li>
+            <li>Děčín.</li>
+            <li>Drážďany.</li>
+            <li>Berlín.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- ÚDRŽBA -->
+
+    <section class="card" id="udrzba">
+
+        <h2>15. Údržba a životnost</h2>
+
+        <h3>Společné oblasti údržby</h3>
+
+        <ul>
+            <li>Kontrola dvojkolí a ložisek.</li>
+            <li>Kontrola převodových mechanismů.</li>
+            <li>Údržba trakčních motorů.</li>
+            <li>Kontrola komutátorů a kartáčů.</li>
+            <li>Kontrola transformátoru.</li>
+            <li>Kontrola elektrické izolace.</li>
+            <li>Údržba pneumatické soustavy.</li>
+            <li>Kontrola mechanických brzd.</li>
+            <li>Kontrola nosných konstrukcí.</li>
+            <li>Odstraňování koroze.</li>
+        </ul>
+
+        <h3>Specifické oblasti řady 242</h3>
+
+        <ul>
+            <li>Údržba přepínače odboček.</li>
+            <li>Kontrola regulačního transformátoru.</li>
+            <li>Údržba pneumatického servomotoru regulace.</li>
+        </ul>
+
+        <h3>Specifické oblasti řady 371</h3>
+
+        <ul>
+            <li>Kontrola rozjezdových odporníků.</li>
+            <li>Kontrola brzdových odporníků.</li>
+            <li>Údržba dvousystémové elektrické výzbroje.</li>
+            <li>Kontrola zařízení elektrodynamické brzdy.</li>
+            <li>Kontrola tlumičů vrtivých pohybů podvozků.</li>
+        </ul>
+
+        <p>
+            Další životnost obou řad závisí
+            na technickém stavu jednotlivých strojů,
+            rozsahu oprav, dostupnosti náhradních dílů
+            a ekonomice dalšího provozu.
+        </p>
+
+    </section>
+
+
+    <!-- VÝHODY A NEVÝHODY -->
+
+    <section class="card" id="vyhody">
+
+        <h2>16. Výhody a nevýhody</h2>
+
+        <div class="porovnani-foto">
+
+            <div>
+
+                <h3>Řada 242 – výhody</h3>
+
+                <ul>
+                    <li>Vyšší maximální tažná síla.</li>
+                    <li>Univerzální konstrukční určení.</li>
+                    <li>Regulace přepínáním odboček.</li>
+                    <li>Provoz pod 25 kV, 50 Hz.</li>
+                    <li>Dlouhodobé provozní zkušenosti.</li>
+                </ul>
+
+                <h3>Řada 242 – nevýhody</h3>
+
+                <ul>
+                    <li>Maximální rychlost 120 km/h.</li>
+                    <li>Pouze jedna napájecí soustava.</li>
+                    <li>Absence elektrodynamické brzdy.</li>
+                    <li>Vysoké stáří vozidel.</li>
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Řada 371 – výhody</h3>
+
+                <ul>
+                    <li>Maximální rychlost 160 km/h.</li>
+                    <li>Dvousystémový provoz.</li>
+                    <li>Elektrodynamická brzda.</li>
+                    <li>Možnost mezinárodního využití.</li>
+                    <li>Konstrukce pro vyšší rychlost.</li>
+                </ul>
+
+                <h3>Řada 371 – nevýhody</h3>
+
+                <ul>
+                    <li>Odporová regulace výkonu.</li>
+                    <li>Nižší maximální tažná síla.</li>
+                    <li>Nepodporuje soustavu 25 kV.</li>
+                    <li>Malý počet vozidel.</li>
+                    <li>Bez rekuperačního brzdění.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ZÁVĚR -->
+
+    <section class="card" id="zaver">
+
+        <h2>17. Celkové zhodnocení</h2>
+
+        <table class="technicke-udaje">
+
+            <tr>
+                <th>Hodnocená vlastnost</th>
+                <th>Výsledek porovnání</th>
+            </tr>
+
+            <tr><td>Maximální rychlost</td><td>Řada 371</td></tr>
+            <tr><td>Maximální tažná síla</td><td>Řada 242</td></tr>
+            <tr><td>Trvalý výkon</td><td>Shodný</td></tr>
+            <tr><td>Služební hmotnost</td><td>Shodná</td></tr>
+            <tr><td>Počet napájecích soustav</td><td>Řada 371</td></tr>
+            <tr><td>Provoz pod 25 kV</td><td>Řada 242</td></tr>
+            <tr><td>Elektrodynamická brzda</td><td>Řada 371</td></tr>
+            <tr><td>Počet historických vozidel řady</td><td>Řada 242</td></tr>
+
+        </table>
+
+        <p>
+            Přestože obě lokomotivy disponují shodným
+            uváděným výkonem, byly konstruovány
+            pro rozdílné potřeby železniční dopravy.
+        </p>
+
+        <p>
+            Řada 242 představuje univerzální střídavou
+            lokomotivu s vyšší maximální tažnou silou.
+            Řada 371 představuje dvousystémovou
+            rychlíkovou lokomotivu přizpůsobenou
+            mezinárodní osobní dopravě.
+        </p>
+
+        <p>
+            Nelze proto jednoznačně určit lepší
+            lokomotivu bez zohlednění typu výkonu,
+            napájecí soustavy a provozních požadavků.
+        </p>
+
+    </section>
+
+
+    <!-- ZDROJE -->
+
+    <section class="card" id="zdroje">
+
+        <h2>18. Použité zdroje</h2>
+
+        <ul>
+
+            <li>
+                <a href="https://www.atlaslokomotiv.net/loko-242.html"
+                   target="_blank" rel="noopener noreferrer">
+                    Atlas lokomotiv – řada 242
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.atlaslokomotiv.net/loko-372.html"
+                   target="_blank" rel="noopener noreferrer">
+                    Atlas lokomotiv – řady 372 a 371
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.lokotrans.eu/vuz/242/"
+                   target="_blank" rel="noopener noreferrer">
+                    LOKOTRANS – technické údaje řady 242
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.atlasvozu.cz/rada/cd/187-371.html"
+                   target="_blank" rel="noopener noreferrer">
+                    Atlas vozů – řada 371
+                </a>
+            </li>
+
+        </ul>
+
+        <p>
+            Výpočty a grafická srovnání jsou vlastní
+            zpracování na základě publikovaných
+            technických údajů.
+        </p>
+
+        <p>
+            Informace mají odborný a vzdělávací
+            charakter. Nenahrazují originální
+            technickou a provozní dokumentaci.
+        </p>
+
+        <a href="lokomotiva-242.html" class="tlacitko">
+            Detail řady 242
+        </a>
+
+        <a href="lokomotiva-371.html" class="tlacitko">
+            Detail řady 371
+        </a>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Atlas lokomotiv</p>
+    <p>Historie • Technika • Železnice</p>
+    <p>Specializovaný atlas lokomotiv řad 242 a 371</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+(function () {
+
+    const lokomotivy = {
+
+        "242": {
+            vykon: 3080,
+            sila: 240,
+            rychlost: 120,
+            hmotnost: 84000,
+            prumer: 1.25,
+            prevod: 3.2
+        },
+
+        "371": {
+            vykon: 3080,
+            sila: 205,
+            rychlost: 160,
+            hmotnost: 84000,
+            prumer: 1.25,
+            prevod: 2.62
+        }
+
+    };
+
+    const volba = document.getElementById("volba-lokomotivy");
+    const posuvnik = document.getElementById("rychlost-vstup");
+
+    function format(cislo, desetinnaMista) {
+        return cislo.toLocaleString("cs-CZ", {
+            minimumFractionDigits: desetinnaMista,
+            maximumFractionDigits: desetinnaMista
+        });
+    }
+
+    function taznaSila(loko, rychlost) {
+
+        if (rychlost === 0) {
+            return loko.sila;
+        }
+
+        return Math.min(
+            loko.sila,
+            loko.vykon / (rychlost / 3.6)
+        );
+
+    }
+
+    function vypocet() {
+
+        const loko = lokomotivy[volba.value];
+
+        posuvnik.max = loko.rychlost;
+
+        if (Number(posuvnik.value) > loko.rychlost) {
+            posuvnik.value = loko.rychlost;
+        }
+
+        const rychlost = Number(posuvnik.value);
+        const v = rychlost / 3.6;
+
+        const sila = taznaSila(loko, rychlost);
+
+        const otacky =
+            (60 * v) / (Math.PI * loko.prumer);
+
+        const otackyMotoru =
+            otacky * loko.prevod;
+
+        const energie =
+            0.5 * loko.hmotnost * v * v;
+
+        document.getElementById("rychlost-hodnota")
+            .textContent = rychlost + " km/h";
+
+        document.getElementById("vysledek-sila")
+            .textContent = format(sila, 1) + " kN";
+
+        document.getElementById("vysledek-rychlost")
+            .textContent = format(v, 2) + " m/s";
+
+        document.getElementById("vysledek-otacky")
+            .textContent = format(otacky, 0) + " ot/min";
+
+        document.getElementById("vysledek-motor")
+            .textContent = format(otackyMotoru, 0) + " ot/min";
+
+        document.getElementById("vysledek-energie")
+            .textContent = format(energie / 1000000, 2) + " MJ";
+
+        document.getElementById("vysledek-kwh")
+            .textContent = format(energie / 3600000, 2) + " kWh";
+
+    }
+
+    volba.addEventListener("change", vypocet);
+
+    posuvnik.addEventListener("input", vypocet);
+
+    vypocet();
+
+
+    // VYKRESLENÍ TRAKČNÍHO GRAFU
+
+    const namespace = "http://www.w3.org/2000/svg";
+
+    const mrizka = document.getElementById("trakcni-mrizka");
+    const osy = document.getElementById("trakcni-osy");
+
+    function svgPrvek(nazev, atributy, text) {
+
+        const prvek = document.createElementNS(namespace, nazev);
+
+        Object.entries(atributy).forEach(([klic, hodnota]) => {
+            prvek.setAttribute(klic, hodnota);
+        });
+
+        if (text !== undefined) {
+            prvek.textContent = text;
+        }
+
+        return prvek;
+
+    }
+
+    function x(rychlost) {
+        return 70 + rychlost / 160 * 530;
+    }
+
+    function y(sila) {
+        return 310 - sila / 250 * 270;
+    }
+
+    for (let sila = 0; sila <= 250; sila += 50) {
+
+        mrizka.appendChild(svgPrvek("line", {
+            x1:70,
+            y1:y(sila),
+            x2:600,
+            y2:y(sila),
+            stroke:"#cbd5e1"
+        }));
+
+        osy.appendChild(svgPrvek("text", {
+            x:58,
+            y:y(sila)+4,
+            "text-anchor":"end",
+            "font-size":12,
+            fill:"#334155"
+        }, sila));
+
+    }
+
+    for (let rychlost = 0; rychlost <= 160; rychlost += 20) {
+
+        mrizka.appendChild(svgPrvek("line", {
+            x1:x(rychlost),
+            y1:40,
+            x2:x(rychlost),
+            y2:310,
+            stroke:"#cbd5e1"
+        }));
+
+        osy.appendChild(svgPrvek("text", {
+            x:x(rychlost),
+            y:335,
+            "text-anchor":"middle",
+            "font-size":12,
+            fill:"#334155"
+        }, rychlost));
+
+    }
+
+    osy.appendChild(svgPrvek("line", {
+        x1:70, y1:40, x2:70, y2:310,
+        stroke:"#334155", "stroke-width":2
+    }));
+
+    osy.appendChild(svgPrvek("line", {
+        x1:70, y1:310, x2:600, y2:310,
+        stroke:"#334155", "stroke-width":2
+    }));
+
+    osy.appendChild(svgPrvek("text", {
+        x:70, y:22,
+        fill:"#334155", "font-size":13
+    }, "Tažná síla (kN)"));
+
+    osy.appendChild(svgPrvek("text", {
+        x:600, y:365,
+        "text-anchor":"end",
+        fill:"#334155", "font-size":13
+    }, "Rychlost (km/h)"));
+
+    Object.keys(lokomotivy).forEach(rada => {
+
+        const loko = lokomotivy[rada];
+
+        let cesta = "";
+
+        for (let rychlost = 0;
+             rychlost <= loko.rychlost;
+             rychlost++) {
+
+            const sila = taznaSila(loko, rychlost);
+
+            cesta +=
+                (rychlost === 0 ? "M" : "L")
+                + x(rychlost) + " "
+                + y(sila) + " ";
+
+        }
+
+        document.getElementById("krivka" + rada)
+            .setAttribute("d", cesta);
+
+    });
+
+})();
+
+</script>
 
 </body>
-
 </html>

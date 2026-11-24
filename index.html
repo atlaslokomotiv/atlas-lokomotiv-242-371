@@ -1,83 +1,148 @@
-
 <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>Atlas lokomotiv 242 a 371</title>
+
+    <meta name="description"
+          content="Atlas elektrických lokomotiv řad 242 a 371. Historie, technické parametry, porovnání a fotogalerie.">
+
+    <title>Atlas lokomotiv | Řady 242 a 371</title>
     <link rel="stylesheet" href="styly.css">
 </head>
+
 <body>
 
 <header>
     <h1>Atlas lokomotiv</h1>
-    <p>Elektrické lokomotivy řady 242 a 371</p>
+    <p>Svět železniční techniky</p>
 </header>
-
+<button id="theme-toggle" type="button"
+        aria-label="Přepnout barevný režim">
+    🌙 Tmavý režim
+</button>
 <nav>
-    <a href="index.html">Úvod</a>
+    <a href="index.html" aria-current="page">Úvod</a>
     <a href="lokomotiva-242.html">Lokomotiva 242</a>
     <a href="lokomotiva-371.html">Lokomotiva 371</a>
     <a href="porovnani.html">Porovnání</a>
     <a href="galerie.html">Fotogalerie</a>
+    <a href="evidence.html">Evidence lokomotiv</a>
 </nav>
 
-
 <main>
-    <section class="card">
-        <h2>Vítejte v Atlasu lokomotiv</h2>
-       <p>
-    Vítejte v Atlasu lokomotiv!
 
-    Na tomto webu najdete technické údaje,
-    historii, fotografie a porovnání
-    elektrických lokomotiv řad 242 a 371.
-</p>
+    <section class="hero">
+        <div class="hero-obsah">
+            <h2>Objevte svět lokomotiv</h2>
+            <p>Technické parametry, historie a fotografie
+               železničních vozidel.</p>
+
+            <a href="#katalog" class="hero-tlacitko">
+                Prozkoumat atlas
+            </a>
+        </div>
     </section>
 
-    <div class="prehled-lokomotiv">
+    <section class="katalog" id="katalog">
 
-        <section class="card">
-            <h2>Lokomotiva řady 242</h2>
+        <h2>Katalog lokomotiv</h2>
 
-            <img src="images/242.jpg"
-                 alt="Lokomotiva 242"
-                 class="prehled-foto">
+        <p class="katalog-popis">
+            Poznejte legendy české železnice
+        </p>
 
-            <p>Maximální rychlost: 120 km/h</p>
-            <p>Napájení: 25 kV, 50 Hz AC</p>
+        <div class="katalog-grid">
 
-            <a href="lokomotiva-242.html"
-               class="tlacitko">
-                Více informací
-            </a>
-        </section>
+            <article class="loko-karta">
+                <img src="images/242.jpg"
+                     alt="Elektrická lokomotiva řady 242"
+                     loading="lazy">
 
-        <section class="card">
-            <h2>Lokomotiva řady 371</h2>
+                <div class="loko-obsah">
+                    <h3>Řada 242</h3>
+                    <p>Plecháč</p>
 
-            <img src="images/371.jpg"
-                 alt="Lokomotiva 371"
-                 class="prehled-foto">
+                    <p>Výkon: <strong>3 080 kW</strong></p>
+                    <p>Rychlost: <strong>120 km/h</strong></p>
+                    <p>Napájení: <strong>25 kV AC</strong></p>
 
-            <p>Maximální rychlost: 160 km/h</p>
-            <p>Napájení: 3 kV DC / 15 kV AC</p>
+                    <a href="lokomotiva-242.html"
+                       class="loko-detail">
+                        Detail lokomotivy →
+                    </a>
+                </div>
+            </article>
 
-            <a href="lokomotiva-371.html"
-               class="tlacitko">
-                Více informací
-            </a>
-        </section>
+            <article class="loko-karta">
+                <img src="images/371.jpg"
+                     alt="Elektrická lokomotiva řady 371"
+                     loading="lazy">
+
+                <div class="loko-obsah">
+                    <h3>Řada 371</h3>
+                    <p>Bastard</p>
+
+                    <p>Výkon: <strong>3 080 kW</strong></p>
+                    <p>Rychlost: <strong>160 km/h</strong></p>
+                    <p>Napájení: <strong>3 kV DC / 15 kV AC</strong></p>
+
+                    <a href="lokomotiva-371.html"
+                       class="loko-detail">
+                        Detail lokomotivy →
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+<section class="statistiky">
+
+    <h2>Atlas v číslech</h2>
+
+    <div class="statistiky-grid">
+
+        <div class="statistika">
+            <span class="counter" data-target="2">2</span>
+            <p>Řady lokomotiv</p>
+        </div>
+
+        <div class="statistika">
+            <span class="counter" data-target="160">160</span>
+            <p>Max. rychlost (km/h)</p>
+        </div>
+
+        <div class="statistika">
+            <span class="counter" data-target="3">3</span>
+            <p>Napájecí soustavy</p>
+        </div>
 
     </div>
+
+</section>
+    <section class="atlas-info">
+        <h2>O Atlasu lokomotiv</h2>
+
+        <p>
+            Atlas lokomotiv je zaměřen na historii,
+            konstrukci a technické parametry
+            elektrických železničních vozidel.
+        </p>
+
+        <a href="porovnani.html" class="hero-tlacitko">
+            Porovnat lokomotivy
+        </a>
+    </section>
+
 </main>
 
-
 <footer>
-    <p>Atlas lokomotiv | Školní projekt</p>
+    <p>© 2026 Atlas lokomotiv</p>
+    <p>Historie • Technika • Železnice</p>
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>

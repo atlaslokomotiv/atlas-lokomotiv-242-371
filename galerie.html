@@ -1,98 +1,624 @@
 
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>Fotogalerie lokomotiv</title>
+
+    <meta name="description"
+          content="Fotogalerie elektrických lokomotiv řad 242 Plecháč a 371 Bastard. Železniční fotodokumentace a fotografie lokomotiv.">
+
+    <title>Fotogalerie | Atlas lokomotiv 242 a 371</title>
+
     <link rel="stylesheet" href="styly.css">
 </head>
+
 <body>
 
 <header>
     <h1>Fotogalerie lokomotiv</h1>
-    <p>Železniční atlas řad 242 a 371</p>
+    <p>Řada 242 – Plecháč | Řada 371 – Bastard</p>
 </header>
 
 <nav>
     <a href="index.html">Úvod</a>
-    <a href="lokomotiva-242.html">Řada 242</a>
-    <a href="lokomotiva-371.html">Řada 371</a>
+    <a href="lokomotiva-242.html">Lokomotiva 242</a>
+    <a href="lokomotiva-371.html">Lokomotiva 371</a>
     <a href="porovnani.html">Porovnání</a>
-    <a href="galerie.html">Fotogalerie</a>
+    <a href="galerie.html" aria-current="page">Fotogalerie</a>
+    <a href="evidence.html">Evidence lokomotiv</a>
+
+    <button id="theme-toggle" type="button">
+        🌙 Tmavý režim
+    </button>
 </nav>
 
 <main>
+
+    <!-- ÚVOD FOTOGALERIE -->
+
     <section class="card">
-        <h2>Fotografie lokomotiv</h2>
+
+        <h2>Železniční fotodokumentace</h2>
+
         <p>
-            Kliknutím na fotografii
-            ji zobrazíte ve větší velikosti.
+            Fotogalerie je zaměřena na elektrické
+            lokomotivy řad 242 a 371, které patří
+            mezi významné zástupce lokomotiv
+            vyrobených podnikem Škoda Plzeň.
         </p>
 
-<div class="filtry">
-    <button type="button" data-filtr="vse">
-        Všechny fotografie
-    </button>
+        <p>
+            Fotografie zachycují vzhled lokomotiv,
+            jejich konstrukční provedení
+            a charakteristické vlastnosti.
+        </p>
 
-    <button type="button" data-filtr="242">
-        Lokomotivy 242
-    </button>
+        <div class="statistiky">
+            <div class="statistiky-grid">
 
-    <button type="button" data-filtr="371">
-        Lokomotivy 371
-    </button>
-</div>
+                <div class="statistika">
+                    <span id="pocet-vsech">4</span>
+                    <p>Fotografií celkem</p>
+                </div>
 
-        <div class="galerie">
-            <figure data-rada="242">
+                <div class="statistika">
+                    <span id="pocet-242">2</span>
+                    <p>Fotografie řady 242</p>
+                </div>
+
+                <div class="statistika">
+                    <span id="pocet-371">2</span>
+                    <p>Fotografie řady 371</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- INFORMACE O LOKOMOTIVÁCH -->
+
+    <section class="card">
+
+        <h2>Fotografované lokomotivní řady</h2>
+
+        <div class="porovnani-foto">
+
+            <div>
+
+                <h3>Řada 242 – Plecháč</h3>
+
                 <img src="images/242.jpg"
-                     alt="Lokomotiva řady 242"
-                     class="galerie-obrazek">
+                     alt="Elektrická lokomotiva řady 242">
+
+                <p>
+                    Jednosystémová střídavá elektrická
+                    lokomotiva určená pro napájecí
+                    soustavu 25 kV, 50 Hz.
+                </p>
+
+                <a href="lokomotiva-242.html"
+                   class="tlacitko">
+                    Technické informace
+                </a>
+
+            </div>
+
+            <div>
+
+                <h3>Řada 371 – Bastard</h3>
+
+                <img src="images/371.jpg"
+                     alt="Elektrická lokomotiva řady 371">
+
+                <p>
+                    Dvousystémová elektrická lokomotiva
+                    s maximální rychlostí 160 km/h,
+                    známá z mezinárodní osobní dopravy.
+                </p>
+
+                <a href="lokomotiva-371.html"
+                   class="tlacitko">
+                    Technické informace
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HLAVNÍ FOTOGALERIE -->
+
+    <section class="card" id="fotogalerie">
+
+        <h2>Fotogalerie</h2>
+
+        <p>
+            Vyberte požadovanou lokomotivní řadu.
+            Kliknutím na fotografii ji zobrazíte
+            ve větší velikosti.
+        </p>
+
+        <div class="atlas-filtry">
+
+            <button type="button"
+                    data-atlas-filtr="vse"
+                    class="aktivni"
+                    aria-pressed="true">
+                Všechny fotografie
+            </button>
+
+            <button type="button"
+                    data-atlas-filtr="242"
+                    aria-pressed="false">
+                Řada 242
+            </button>
+
+            <button type="button"
+                    data-atlas-filtr="371"
+                    aria-pressed="false">
+                Řada 371
+            </button>
+
+        </div>
+
+        <p id="pocet-zobrazenych" aria-live="polite">
+            Zobrazeny 4 fotografie
+        </p>
+
+        <div class="atlas-galerie">
+
+
+            <!-- FOTOGRAFIE 242 ČÍSLO 1 -->
+
+            <figure data-rada="242">
+
+                <button class="atlas-foto" type="button">
+
+                    <img src="images/242.jpg"
+                         alt="Elektrická lokomotiva řady 242"
+                         loading="lazy">
+
+                </button>
+
                 <figcaption>
-                    Elektrická lokomotiva 242
+
+                    <span class="oznaceni-rady rada242">
+                        Řada 242
+                    </span>
+
+                    <h3>Plecháč</h3>
+
+                    <p>Elektrická lokomotiva řady 242</p>
+
+                    <div class="foto-udaje">
+                        <p>Evidenční číslo: neuvedeno</p>
+                        <p>Místo pořízení: neuvedeno</p>
+                        <p>Datum pořízení: neuvedeno</p>
+                        <p>Autor: neuveden</p>
+                    </div>
+
                 </figcaption>
+
             </figure>
+
+
+            <!-- FOTOGRAFIE 242 ČÍSLO 2 -->
+
+            <figure data-rada="242">
+
+                <button class="atlas-foto" type="button">
+
+                    <img src="images/242-2.jpg"
+                         alt="Další pohled na lokomotivu řady 242"
+                         loading="lazy">
+
+                </button>
+
+                <figcaption>
+
+                    <span class="oznaceni-rady rada242">
+                        Řada 242
+                    </span>
+
+                    <h3>Plecháč</h3>
+
+                    <p>Další pohled na lokomotivu</p>
+
+                    <div class="foto-udaje">
+                        <p>Evidenční číslo: neuvedeno</p>
+                        <p>Místo pořízení: neuvedeno</p>
+                        <p>Datum pořízení: neuvedeno</p>
+                        <p>Autor: neuveden</p>
+                    </div>
+
+                </figcaption>
+
+            </figure>
+
+
+            <!-- FOTOGRAFIE 371 ČÍSLO 1 -->
 
             <figure data-rada="371">
-                <img src="images/371.jpg"
-                     alt="Lokomotiva řady 371"
-                     class="galerie-obrazek">
+
+                <button class="atlas-foto" type="button">
+
+                    <img src="images/371.jpg"
+                         alt="Elektrická lokomotiva řady 371"
+                         loading="lazy">
+
+                </button>
+
                 <figcaption>
-                    Elektrická lokomotiva 371
+
+                    <span class="oznaceni-rady rada371">
+                        Řada 371
+                    </span>
+
+                    <h3>Bastard</h3>
+
+                    <p>Dvousystémová elektrická lokomotiva</p>
+
+                    <div class="foto-udaje">
+                        <p>Evidenční číslo: neuvedeno</p>
+                        <p>Místo pořízení: neuvedeno</p>
+                        <p>Datum pořízení: neuvedeno</p>
+                        <p>Autor: neuveden</p>
+                    </div>
+
                 </figcaption>
+
             </figure>
-            <figure data-rada="242">
-    <img src="images/242-2.jpg"
-         alt="Další fotografie lokomotivy 242"
-         class="galerie-obrazek">
-    <figcaption>
-        Lokomotiva 242 – další fotografie
-    </figcaption>
-</figure>
-<figure data-rada="371">
-    <img src="images/371-2.jpg"
-         alt="Další fotografie lokomotivy 371"
-         class="galerie-obrazek">
-    <figcaption>Lokomotiva 371 – další fotografie</figcaption>
-</figure>
+
+
+            <!-- FOTOGRAFIE 371 ČÍSLO 2 -->
+
+            <figure data-rada="371">
+
+                <button class="atlas-foto" type="button">
+
+                    <img src="images/371-2.jpg"
+                         alt="Další pohled na lokomotivu řady 371"
+                         loading="lazy">
+
+                </button>
+
+                <figcaption>
+
+                    <span class="oznaceni-rady rada371">
+                        Řada 371
+                    </span>
+
+                    <h3>Bastard</h3>
+
+                    <p>Další pohled na lokomotivu</p>
+
+                    <div class="foto-udaje">
+                        <p>Evidenční číslo: neuvedeno</p>
+                        <p>Místo pořízení: neuvedeno</p>
+                        <p>Datum pořízení: neuvedeno</p>
+                        <p>Autor: neuveden</p>
+                    </div>
+
+                </figcaption>
+
+            </figure>
+
         </div>
+
     </section>
+
+
+    <!-- FOTODOKUMENTACE -->
+
+    <section class="card">
+
+        <h2>Zaměření fotodokumentace</h2>
+
+        <p>
+            Fotogalerie bude postupně rozšiřována
+            o další fotografie jednotlivých
+            lokomotiv a jejich konstrukčních částí.
+        </p>
+
+        <h3>Plánované kategorie fotografií</h3>
+
+        <ul>
+            <li>Celkové pohledy na lokomotivy.</li>
+            <li>Jednotlivá evidenční čísla.</li>
+            <li>Historické barevné nátěry.</li>
+            <li>Stanoviště strojvedoucího.</li>
+            <li>Podvozky a dvojkolí.</li>
+            <li>Sběrače proudu.</li>
+            <li>Střešní elektrická výzbroj.</li>
+            <li>Strojovna lokomotivy.</li>
+            <li>Trakční motory.</li>
+            <li>Brzdová výzbroj.</li>
+            <li>Historické provozní fotografie.</li>
+            <li>Fotografie odstavených vozidel.</li>
+            <li>Fotografie muzejních vozidel.</li>
+        </ul>
+
+    </section>
+
+
+    <!-- AUTORSKÁ PRÁVA -->
+
+    <section class="card">
+
+        <h2>Autoři a zdroje fotografií</h2>
+
+        <p>
+            U jednotlivých fotografií budou postupně
+            doplňovány údaje o autorovi, místě
+            a datu pořízení.
+        </p>
+
+        <p>
+            Fotografie podléhají autorským právům.
+            Jejich další použití se řídí příslušnou
+            licencí nebo souhlasem autora.
+        </p>
+
+    </section>
+
+
+    <!-- DALŠÍ INFORMACE -->
+
+    <section class="card">
+
+        <h2>Prozkoumejte techniku lokomotiv</h2>
+
+        <a href="lokomotiva-242.html" class="tlacitko">
+            Lokomotiva 242
+        </a>
+
+        <a href="lokomotiva-371.html" class="tlacitko">
+            Lokomotiva 371
+        </a>
+
+        <a href="porovnani.html" class="tlacitko">
+            Technické porovnání
+        </a>
+
+    </section>
+
 </main>
 
-<div id="nahled" class="nahled" role="dialog"
-     aria-modal="true" aria-label="Náhled fotografie"
-     hidden>
-    <button id="zavrit" type="button"
-            aria-label="Zavřít fotografii">×</button>
-    <img id="velky-obrazek" alt="">
-</div>
+
+<!-- ZVĚTŠENÝ NÁHLED FOTOGRAFIE -->
+
+<dialog id="atlas-nahled" aria-label="Náhled fotografie">
+
+    <button id="atlas-zavrit"
+            type="button"
+            aria-label="Zavřít fotografii">
+        ×
+    </button>
+
+    <button id="atlas-predchozi"
+            type="button"
+            aria-label="Předchozí fotografie">
+        ❮
+    </button>
+
+    <img id="atlas-velky-obrazek" alt="">
+
+    <button id="atlas-dalsi"
+            type="button"
+            aria-label="Další fotografie">
+        ❯
+    </button>
+
+    <p id="atlas-popisek"></p>
+
+    <p id="atlas-poradi"></p>
+
+</dialog>
+
 
 <footer>
-    <p>Atlas lokomotiv 242 a 371</p>
+
+    <p>© 2026 Atlas lokomotiv</p>
+
+    <p>Historie • Technika • Železnice</p>
+
+    <p>
+        Specializovaný atlas elektrických
+        lokomotiv řad 242 a 371
+    </p>
+
 </footer>
 
+
 <script src="script.js"></script>
+
+<script>
+
+(function () {
+
+    const fotografie = Array.from(
+        document.querySelectorAll(".atlas-galerie figure")
+    );
+
+    const filtry = document.querySelectorAll(
+        "[data-atlas-filtr]"
+    );
+
+    const nahled = document.getElementById("atlas-nahled");
+
+    const velkyObrazek = document.getElementById(
+        "atlas-velky-obrazek"
+    );
+
+    let zobrazeneFotografie = [...fotografie];
+
+    let aktualniIndex = 0;
+
+
+    // AUTOMATICKÉ POČÍTADLO FOTOGRAFIÍ
+
+    document.getElementById("pocet-vsech")
+        .textContent = fotografie.length;
+
+    document.getElementById("pocet-242")
+        .textContent = fotografie.filter(
+            foto => foto.dataset.rada === "242"
+        ).length;
+
+    document.getElementById("pocet-371")
+        .textContent = fotografie.filter(
+            foto => foto.dataset.rada === "371"
+        ).length;
+
+
+    // FILTROVÁNÍ FOTOGRAFIÍ
+
+    filtry.forEach(tlacitko => {
+
+        tlacitko.addEventListener("click", () => {
+
+            const filtr = tlacitko.dataset.atlasFiltr;
+
+            filtry.forEach(prvek => {
+
+                prvek.classList.remove("aktivni");
+
+                prvek.setAttribute("aria-pressed", "false");
+
+            });
+
+            tlacitko.classList.add("aktivni");
+
+            tlacitko.setAttribute("aria-pressed", "true");
+
+            fotografie.forEach(foto => {
+
+                foto.hidden = !(
+                    filtr === "vse" ||
+                    foto.dataset.rada === filtr
+                );
+
+            });
+
+            zobrazeneFotografie = fotografie.filter(
+                foto => !foto.hidden
+            );
+
+            document.getElementById("pocet-zobrazenych")
+                .textContent =
+                    "Počet zobrazených fotografií: " +
+                    zobrazeneFotografie.length;
+
+        });
+
+    });
+
+
+    // ZOBRAZENÍ VELKÉ FOTOGRAFIE
+
+    function zobrazFotografii(index) {
+
+        if (zobrazeneFotografie.length === 0) return;
+
+        aktualniIndex = (
+            index + zobrazeneFotografie.length
+        ) % zobrazeneFotografie.length;
+
+        const foto = zobrazeneFotografie[aktualniIndex];
+
+        const obrazek = foto.querySelector("img");
+
+        velkyObrazek.src = obrazek.src;
+
+        velkyObrazek.alt = obrazek.alt;
+
+        document.getElementById("atlas-popisek")
+            .textContent = obrazek.alt;
+
+        document.getElementById("atlas-poradi")
+            .textContent =
+                (aktualniIndex + 1) + " / " +
+                zobrazeneFotografie.length;
+
+    }
+
+
+    fotografie.forEach(foto => {
+
+        foto.querySelector(".atlas-foto")
+            .addEventListener("click", () => {
+
+                zobrazFotografii(
+                    zobrazeneFotografie.indexOf(foto)
+                );
+
+                nahled.showModal();
+
+            });
+
+    });
+
+
+    // PŘEDCHOZÍ FOTOGRAFIE
+
+    document.getElementById("atlas-predchozi")
+        .addEventListener("click", () => {
+
+            zobrazFotografii(aktualniIndex - 1);
+
+        });
+
+
+    // DALŠÍ FOTOGRAFIE
+
+    document.getElementById("atlas-dalsi")
+        .addEventListener("click", () => {
+
+            zobrazFotografii(aktualniIndex + 1);
+
+        });
+
+
+    // ZAVŘENÍ NÁHLEDU
+
+    document.getElementById("atlas-zavrit")
+        .addEventListener("click", () => {
+
+            nahled.close();
+
+        });
+
+
+    // OVLÁDÁNÍ KLÁVESNICÍ
+
+    document.addEventListener("keydown", udalost => {
+
+        if (!nahled.open) return;
+
+        if (udalost.key === "ArrowRight") {
+
+            zobrazFotografii(aktualniIndex + 1);
+
+        }
+
+        if (udalost.key === "ArrowLeft") {
+
+            zobrazFotografii(aktualniIndex - 1);
+
+        }
+
+    });
+
+})();
+
+</script>
+
 </body>
 </html>
